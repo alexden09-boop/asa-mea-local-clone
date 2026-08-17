@@ -3,7 +3,18 @@
 
   const data = window.ASA_DATA || {};
   const root = document.getElementById("root");
+  const keyboardKeys = new Set(["Tab", "Enter", " ", "Escape", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"]);
   let revealObserver = null;
+  let storyObserver = null;
+  let counterObserver = null;
+  let megaOutsideHandler = null;
+  let megaKeyHandler = null;
+  let pendingRevealElements = new Set();
+
+  document.addEventListener("keydown", (event) => {
+    if (keyboardKeys.has(event.key)) root.classList.add("is-keyboard-input");
+  });
+  document.addEventListener("pointerdown", () => root.classList.remove("is-keyboard-input"), { passive: true });
   let scrollProgressFrame = 0;
 
   const localImages = {
@@ -121,14 +132,14 @@
           <a class="Header__logo" href="#/" aria-label="ASA home"><img src="assets/images/logo.png" width="251" height="250" alt="Advanced Sports Academy"></a>
           <nav class="Header__nav" aria-label="Main navigation">
             <a class="Header__link${active("/")}" href="#/">Home</a>
-            <details class="Header__academy">
-              <summary>Academy</summary>
-              <div class="Header__dropdown">
-                <a href="#/academy/6">Football</a>
-                <a href="#/academy/5">Padel</a>
-                <a href="#/academy/4">Tennis</a>
+            <div class="Header__academy">
+              <button class="Header__academy-trigger${active("/academy")}" type="button" aria-expanded="false" aria-controls="academy-mega">Academy</button>
+              <div id="academy-mega" class="Header__dropdown Header__mega" aria-hidden="true">
+                <a href="#/academy/6"><img src="assets/images/hero-football-900.webp" width="900" height="490" loading="lazy" decoding="async" alt=""><span><b>Football</b><small>Build the complete player</small></span></a>
+                <a href="#/academy/5"><img src="assets/images/hero-padel-900.webp" width="900" height="490" loading="lazy" decoding="async" alt=""><span><b>Padel</b><small>Read the court differently</small></span></a>
+                <a href="#/academy/4"><img src="assets/images/shop-tennis-editorial.webp" width="1536" height="1024" loading="lazy" decoding="async" alt=""><span><b>Tennis</b><small>Own every point</small></span></a>
               </div>
-            </details>
+            </div>
             <a class="Header__link${active("/fitness")}" href="#/fitness">Fitness</a>
             <a class="Header__link${active("/reservation")}" href="#/reservation">Reservation</a>
             <a class="Header__link${active("/personal-trainer")}" href="#/personal-trainer">Private Training</a>
@@ -137,6 +148,7 @@
             <a class="Header__link${active("/contact-us")}" href="#/contact-us">Contact Us</a>
           </nav>
           <div class="Header__actions">
+            <a class="Header__book" href="#/reservation">Book a Session</a>
             <a class="icon-link" href="#/checkout" aria-label="Cart">${icon("cart")}</a>
             <a class="icon-link" href="#/notifications" aria-label="Notifications">${icon("bell")}</a>
             <a class="icon-link icon-link--account" href="#/sign-in" aria-label="Sign in or sign up">${icon("user")}<span>Sign In/Up</span></a>
@@ -156,6 +168,7 @@
         <a class="mobile-link${active("/shop")}" href="#/shop">Shop</a>
         <a class="mobile-link${active("/our-team")}" href="#/our-team">Our Team</a>
         <a class="mobile-link${active("/contact-us")}" href="#/contact-us">Contact Us</a>
+        <a class="mobile-link mobile-link--primary" href="#/reservation">Book a Session</a>
       </nav>`;
   }
 
@@ -192,7 +205,7 @@
     return `${header(path)}<main class="site-main${path === "/" ? "" : " route-enter"}">${content}</main>${includeFooter ? footer() : ""}`;
   }
 
-  function home() {
+  function legacyHome() {
     const heroItems = (data.homeBanners || []).slice(0, 3);
     const values = (data.services || []).slice(0, 5);
     const academies = (data.academies || []).slice().sort((a, b) => b.id - a.id);
@@ -242,6 +255,174 @@
       <section class="OurAchievements"><h2 class="section-title">${escapeHTML(data.achievements && data.achievements.title)}</h2><div class="achievements-layout"><img src="assets/images/achievements.png" width="456" height="516" loading="lazy" decoding="async" alt="First-place trophy"><div class="achievements-copy">${safeHTML(data.achievements && data.achievements.description)}</div></div></section>
       <section class="Raed"><div class="Raed__layout"><blockquote class="Raed__quote"><strong>TRUST<br>THE PROCESS</strong><small>- RAED AL SADDIK -</small></blockquote><img class="Raed__image" src="assets/images/quote-raed.png" width="569" height="570" loading="lazy" decoding="async" alt="Raed Al Saddik"></div></section>
       <section class="Youtube"><h2 class="section-title">Follow Us For The Latest Updates!</h2><div class="Youtube__layout"><img class="Youtube__image" src="assets/images/youtube.png" width="648" height="385" loading="lazy" decoding="async" alt="Trust the process on YouTube"><a class="btn" href="https://www.youtube.com/@ASA-LEBANON" target="_blank" rel="noreferrer">Visit us on YouTube</a></div></section>
+    `, "/");
+  }
+
+  function home() {
+    const values = (data.services || []).slice(0, 5);
+    const academies = (data.academies || []).slice().sort((a, b) => b.id - a.id);
+    const heroPrograms = [
+      {
+        name: "Football",
+        kicker: "Football Academy",
+        title: ["PLAY WITH", "PURPOSE"],
+        copy: "Technical detail, game intelligence and the confidence to make the next decision.",
+        image: "assets/images/hero-football-1600.webp",
+        srcset: "assets/images/hero-football-900.webp 900w, assets/images/hero-football-1600.webp 1600w",
+        route: "#/academy/6"
+      },
+      {
+        name: "Padel",
+        kicker: "Padel Academy",
+        title: ["READ THE", "COURT"],
+        copy: "Sharper positioning, smarter partnerships and a training rhythm built around the rally.",
+        image: "assets/images/hero-padel-1600.webp",
+        srcset: "assets/images/hero-padel-900.webp 900w, assets/images/hero-padel-1600.webp 1600w",
+        route: "#/academy/5"
+      },
+      {
+        name: "Tennis",
+        kicker: "Tennis Academy",
+        title: ["OWN EVERY", "POINT"],
+        copy: "Build the technique, discipline and point-by-point mindset that keeps you moving forward.",
+        image: "assets/images/shop-tennis-editorial.webp",
+        route: "#/academy/4"
+      }
+    ];
+    const achievements = [
+      { year: "2022", place: "Lebanon", title: "Afro Asian Tournament", note: "Team 2014 at Sadaka wel Salem al duwaliye." },
+      { year: "2023", place: "Italy", title: "Mirabilanda Tournament", note: "Teams 2014 and 2015." },
+      { year: "2023", place: "Lebanon", title: "Lebanese League", note: "Team 2012." },
+      { year: "2023", place: "Qatar", title: "Afro Asian Tournament", note: "Teams 2014, 2015 and 2008-2009." }
+    ];
+    const team = [
+      { initials: "RS", name: "Raed el Saddik", role: "CEO / Founder" },
+      { initials: "BN", name: "Bilal Nasser", role: "Technical Director, Football" },
+      { initials: "HA", name: "Hamza Abboud", role: "Fitness Director" },
+      { initials: "MB", name: "Maria Breidy", role: "Padel Coach" },
+      { initials: "MM", name: "Mohamad El Masri", role: "Tennis Coach" }
+    ];
+    const gear = [
+      { sport: "Football", title: "Built for the full ninety", image: "assets/images/shop-football-editorial.webp", route: "#/shop" },
+      { sport: "Padel", title: "Find your court setup", image: "assets/images/shop-padel-editorial.webp", route: "#/shop" },
+      { sport: "Tennis", title: "Control starts here", image: "assets/images/shop-tennis-editorial.webp", route: "#/shop" }
+    ];
+
+    return page(`
+      <section class="HomeBanner campaign-hero" aria-label="Featured ASA programs">
+        <div class="campaign-hero__trajectory" aria-hidden="true"></div>
+        ${heroPrograms.map((item, index) => `
+          <article id="hero-panel-${index}" role="tabpanel" class="HomeBanner__slide${index === 0 ? " is-active" : ""}" data-slide="${index}" aria-hidden="${index !== 0}"${index === 0 ? "" : " inert"}>
+            <img class="HomeBanner__image" ${index === 0 ? `src="${item.image}"${item.srcset ? ` srcset="${item.srcset}"` : ""} fetchpriority="high"` : `data-src="${item.image}"${item.srcset ? ` data-srcset="${item.srcset}"` : ""} loading="lazy"`} sizes="100vw" width="1600" height="900" decoding="async" alt="">
+            <div class="HomeBanner__content">
+              <p class="campaign-hero__kicker">${item.kicker}</p>
+              <h1 class="HomeBanner__title" aria-label="${item.title.join(" ")}"><span>${item.title[0]}</span><span>${item.title[1]}</span></h1>
+              <p class="HomeBanner__copy">${item.copy}</p>
+              <div class="campaign-hero__actions"><a class="btn btn--light" href="${item.route}">Explore Academy</a><a class="text-link" href="#/reservation">Book a Session <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>`).join("")}
+        <div class="campaign-hero__controls">
+          <button class="HomeBanner__arrow HomeBanner__arrow--prev" type="button" aria-label="Previous program">←</button>
+          <div class="HomeBanner__pagination" role="tablist" aria-label="Choose featured program">
+            ${heroPrograms.map((item, index) => `<button type="button" role="tab" data-hero-page="${index}" aria-controls="hero-panel-${index}" aria-label="Show ${item.name}" aria-selected="${index === 0}"${index === 0 ? ' aria-current="true"' : ""}><span>${item.name}</span></button>`).join("")}
+          </div>
+          <button class="HomeBanner__arrow HomeBanner__arrow--next" type="button" aria-label="Next program">→</button>
+        </div>
+      </section>
+
+      <section class="ValueRail" aria-labelledby="values-title">
+        <div class="section-heading section-heading--split"><div><p class="eyebrow">The ASA standard</p><h2 id="values-title">MORE THAN<br>A SESSION</h2></div><p>Every program is built on five behaviours that travel beyond sport and stay with the athlete.</p></div>
+        <div class="ValueRail__track">
+          ${values.map((item, index) => `<article class="value-rail__item"><span>0${index + 1}</span><img src="${localImages.values[index]}" width="160" height="160" loading="lazy" decoding="async" alt=""><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(plainText(item.description))}</p></article>`).join("")}
+        </div>
+      </section>
+
+      <section class="AcademyExplorer" aria-labelledby="academies-title">
+        <div class="section-heading section-heading--inverse"><p class="eyebrow">Choose your discipline</p><h2 id="academies-title">THREE COURTS.<br>ONE STANDARD.</h2></div>
+        <div class="AcademyExplorer__layout">
+          <div class="AcademyExplorer__tabs" role="tablist" aria-label="ASA academies">
+            ${academies.map((item, index) => `<button type="button" role="tab" data-academy-tab="${item.id}" aria-controls="academy-panel-${item.id}" aria-selected="${index === 0}" class="${index === 0 ? "is-active" : ""}"><span>0${index + 1}</span><strong>${escapeHTML(item.name)}</strong><small>${escapeHTML(item.title)}</small></button>`).join("")}
+          </div>
+          <div class="AcademyExplorer__stage">
+            ${academies.map((item, index) => `<article id="academy-panel-${item.id}" class="AcademyExplorer__panel${index === 0 ? " is-active" : ""}" data-academy-panel="${item.id}" aria-hidden="${index !== 0}"><img src="${localImages.academies[item.id]}" width="900" height="900" loading="lazy" decoding="async" alt="${escapeHTML(item.name)} training"><div class="AcademyExplorer__panel-copy"><p>${escapeHTML(plainText(item.description))}</p><div><a class="btn btn--light" href="#/academy/${item.id}">Discover ${escapeHTML(item.name)}</a><a class="text-link" href="#/reservation">Book training ↗</a></div></div></article>`).join("")}
+          </div>
+        </div>
+      </section>
+
+      <section class="ASAStory" aria-labelledby="story-title">
+        <div class="ASAStory__sticky">
+          <div class="ASAStory__media"><img src="assets/images/commitment.jpg" width="1843" height="1003" loading="lazy" decoding="async" alt="Athlete training with battle ropes"><p>Built through repetition.<br>Proven under pressure.</p></div>
+          <div class="ASAStory__intro"><p class="eyebrow">Our commitment</p><h2 id="story-title" data-story-title>${escapeHTML(values[0] && values[0].title || "Development")}</h2><p>${escapeHTML(plainText(data.commitment && data.commitment.description))}</p></div>
+        </div>
+        <div class="ASAStory__steps" aria-label="ASA principles">
+          ${values.map((item, index) => `<button type="button" data-story-step="${index}" data-story-label="${escapeHTML(item.title)}" class="${index === 0 ? "is-active" : ""}" aria-pressed="${index === 0}"><span>0${index + 1}</span><strong>${escapeHTML(item.title)}</strong><small>${escapeHTML(plainText(item.description))}</small></button>`).join("")}
+        </div>
+      </section>
+
+      <section class="ASAMetrics" aria-labelledby="metrics-title">
+        <div class="ASAMetrics__heading"><p class="eyebrow">A growing community</p><h2 id="metrics-title">THE NUMBERS<br>KEEP MOVING</h2></div>
+        <div class="ASAMetrics__grid">
+          <article><p><span data-counter="800">0</span><b>+</b></p><h3>Members</h3><small>One connected sports community.</small></article>
+          <article><p><span data-counter="9">0</span></p><h3>Schools</h3><small>Programs that meet athletes where they learn.</small></article>
+          <article><p><span data-counter="70">0</span></p><h3>Ages 3-70</h3><small>Progress has no single starting line.</small></article>
+        </div>
+      </section>
+
+      <section class="AchievementStory" aria-labelledby="achievement-title">
+        <div class="AchievementStory__lead"><p class="eyebrow">Milestones</p><h2 id="achievement-title">PROGRESS<br>YOU CAN PLACE</h2><img src="assets/images/achievements.png" width="456" height="516" loading="lazy" decoding="async" alt="First-place trophy"></div>
+        <div class="AchievementStory__timeline">
+          ${achievements.map((item, index) => `<article><span>0${index + 1}</span><time>${item.year}</time><p>${item.place}</p><h3>${item.title}</h3><small>${item.note}</small></article>`).join("")}
+        </div>
+      </section>
+
+      <section class="TeamSpotlight" aria-labelledby="team-title">
+        <div class="section-heading section-heading--inverse section-heading--split"><div><p class="eyebrow">The people behind the progress</p><h2 id="team-title">COACHED WITH<br>INTENTION</h2></div><a class="text-link" href="#/our-team">Meet the full team ↗</a></div>
+        <div class="TeamSpotlight__track">
+          ${team.map((member, index) => `<article class="coach-tile"><span class="coach-tile__index">0${index + 1}</span><strong aria-hidden="true">${member.initials}</strong><div><p>${member.role}</p><h3>${member.name}</h3></div></article>`).join("")}
+        </div>
+      </section>
+
+      <section class="TrainingRhythm" aria-labelledby="rhythm-title">
+        <div class="section-heading section-heading--split"><div><p class="eyebrow">Training rhythm</p><h2 id="rhythm-title">FIND YOUR<br>FORMAT</h2></div><p>Start with the structure that fits. The reservation route takes you through current package and venue choices.</p></div>
+        <div class="TrainingRhythm__tabs" role="tablist" aria-label="Training formats">
+          <button type="button" role="tab" class="is-active" data-training-tab="football" aria-selected="true" aria-controls="training-football">Football</button>
+          <button type="button" role="tab" data-training-tab="padel" aria-selected="false" aria-controls="training-padel">Padel</button>
+          <button type="button" role="tab" data-training-tab="private" aria-selected="false" aria-controls="training-private">Private</button>
+        </div>
+        <div class="TrainingRhythm__stage">
+          <article id="training-football" class="TrainingRhythm__panel is-active" data-training-panel="football" aria-hidden="false"><span>TEAM DEVELOPMENT</span><h3>2 or 3 days every week</h3><p>Consistent team work with a clear technical rhythm.</p><a class="btn" href="#/reservation">Explore reservation</a></article>
+          <article id="training-padel" class="TrainingRhythm__panel" data-training-panel="padel" aria-hidden="true"><span>COURT RESERVATION</span><h3>60, 90 or 120 minutes</h3><p>Choose the court duration that matches your game.</p><a class="btn" href="#/reservation">Choose a court</a></article>
+          <article id="training-private" class="TrainingRhythm__panel" data-training-panel="private" aria-hidden="true"><span>FOCUSED COACHING</span><h3>1 on 1, 1 on 2 or 1 on 3</h3><p>More direct feedback, adapted to the people in the session.</p><a class="btn" href="#/personal-trainer">See private training</a></article>
+        </div>
+      </section>
+
+      <section class="GearShowcase" aria-labelledby="gear-title">
+        <div class="section-heading section-heading--split"><div><p class="eyebrow">ASA equipment edit</p><h2 id="gear-title">GEAR FOR THE<br>NEXT REP</h2></div><a class="text-link text-link--dark" href="#/shop">Enter the shop ↗</a></div>
+        <div class="GearShowcase__grid">
+          ${gear.map((item, index) => `<a class="gear-panel gear-panel--${index + 1}" href="${item.route}"><img src="${item.image}" width="1536" height="1024" loading="lazy" decoding="async" alt="${item.sport} training equipment"><div><span>0${index + 1} / ${item.sport}</span><h3>${item.title}</h3><p>Shop the edit <b aria-hidden="true">↗</b></p></div></a>`).join("")}
+        </div>
+      </section>
+
+      <section class="SocialPulse" aria-labelledby="social-title">
+        <div class="SocialPulse__copy"><p class="eyebrow">Inside ASA</p><h2 id="social-title">THE WORK<br>BETWEEN WINS</h2><p>Training days, people and progress from across the ASA community.</p><div><a class="btn" href="https://www.instagram.com/advancedsportsacademy/" target="_blank" rel="noreferrer">Instagram</a><a class="text-link" href="https://www.tiktok.com/@asa_academy" target="_blank" rel="noreferrer">TikTok ↗</a></div></div>
+        <div class="SocialPulse__grid">
+          <figure class="social-tile social-tile--wide"><img src="assets/images/hero-football-900.webp" width="900" height="490" loading="lazy" decoding="async" alt="Football training"><figcaption>Build the player</figcaption></figure>
+          <figure class="social-tile"><img src="assets/images/hero-padel-900.webp" width="900" height="490" loading="lazy" decoding="async" alt="Padel training"><figcaption>Read the court</figcaption></figure>
+          <figure class="social-tile"><img src="assets/images/quote-raed.png" width="569" height="570" loading="lazy" decoding="async" alt="Raed el Saddik"><figcaption>Trust the process</figcaption></figure>
+          <figure class="social-tile social-tile--wide"><img src="assets/images/about-asa.png" width="711" height="1079" loading="lazy" decoding="async" alt="ASA sports equipment"><figcaption>Keep moving</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="TrustWall" aria-labelledby="trust-title">
+        <p class="eyebrow" id="trust-title">Partners and sponsors</p>
+        <div class="TrustWall__logos">${["assets/images/partner-egypt.png", "assets/images/partner-uae.png", "assets/images/sponsor-nox.png", "assets/images/sponsor-knock.png", "assets/images/sponsor-gerimax.png"].map((src, index) => `<div><img src="${src}" loading="lazy" decoding="async" alt="${index < 2 ? "Partner" : "Sponsor"} logo"></div>`).join("")}</div>
+      </section>
+
+      <section class="FinalCTA" aria-labelledby="final-cta-title">
+        <img src="assets/images/shop-football-editorial.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Football training equipment">
+        <div class="FinalCTA__shape" aria-hidden="true"></div>
+        <div class="FinalCTA__content"><p class="eyebrow">Your next session</p><h2 id="final-cta-title">START WHERE<br>YOU ARE.</h2><p>Choose your discipline. We will help you build the rhythm.</p><div><a class="btn btn--light magnetic-cta" data-magnetic href="#/reservation">Book a Session</a><a class="text-link" href="#/contact-us">Talk to ASA ↗</a></div></div>
+      </section>
     `, "/");
   }
 
@@ -337,7 +518,16 @@
   }
 
   function shopPage() {
-    return page(`<section class="ShopPage"><div class="shop-intro"><h1>RIGHT<br>GEAR</h1><span class="missing-dots" aria-label="Source banner unavailable"></span></div><div class="shop-offers"><article class="shop-offer shop-offer--football"><div><span>INTERESTED IN</span><h2>Football</h2><p>EQUIPMENT?</p><a class="btn" href="#/products?academy=6">Shop Now</a></div></article><article class="shop-offer shop-offer--missing"><span class="missing-dots" aria-label="Source offer image unavailable"></span><a class="btn" href="#/products?academy=5">Shop Now</a></article><article class="shop-offer shop-offer--missing"><span class="missing-dots" aria-label="Source offer image unavailable"></span><a class="btn" href="#/products?academy=4">Shop Now</a></article></div><h2 class="featured-heading">Featured Product</h2><div class="featured-empty"></div><section class="shop-category"><h2>SHOP BY CATEGORY</h2><article class="category-offer"><h3>Padel Equipment</h3><span class="missing-dots" aria-label="Source category image unavailable"></span><a class="btn" href="#/products">Shop Now</a></article></section></section>`, "/shop");
+    const edits = [
+      { id: 6, sport: "Football", title: "Built for the full ninety", copy: "Training essentials selected for repetition, control and match-day focus.", image: "assets/images/shop-football-editorial.webp" },
+      { id: 5, sport: "Padel", title: "Own the next rally", copy: "A focused edit for court movement, cleaner contact and longer sessions.", image: "assets/images/shop-padel-editorial.webp" },
+      { id: 4, sport: "Tennis", title: "Control starts here", copy: "Equipment built around balance, feel and point-by-point consistency.", image: "assets/images/shop-tennis-editorial.webp" }
+    ];
+    return page(`<section class="ShopPage ShopEditorial">
+      <header class="ShopEditorial__hero"><div><p class="eyebrow">ASA equipment edit</p><h1>RIGHT GEAR.<br>BETTER RHYTHM.</h1><p>Three disciplines. One focused collection for the work that happens before the result.</p><a class="btn btn--light" href="#/products">Explore all products</a></div><span aria-hidden="true">ASA / SHOP</span></header>
+      <div class="ShopEditorial__edits">${edits.map((item, index) => `<article class="shop-edit shop-edit--${index + 1}"><a class="shop-edit__media" href="#/products?academy=${item.id}" aria-label="Shop ${item.sport} equipment"><img src="${item.image}" width="1536" height="1024" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" alt="${item.sport} training equipment"><span>0${index + 1}</span></a><div><p>${item.sport} edit</p><h2>${item.title}</h2><small>${item.copy}</small><a class="text-link text-link--dark" href="#/products?academy=${item.id}">Shop ${item.sport} ↗</a></div></article>`).join("")}</div>
+      <section class="ShopEditorial__closing"><p class="eyebrow">Need a place to use it?</p><h2>TAKE THE GEAR<br>TO THE COURT.</h2><div><a class="btn" href="#/reservation">Book a session</a><a class="text-link text-link--dark" href="#/contact-us">Ask ASA ↗</a></div></section>
+    </section>`, "/shop");
   }
 
   function productsPage() {
@@ -351,8 +541,23 @@
     return page(`<section class="AccountListPage"><h1>‹ ${isCart ? "Your Cart" : "Notifications"}</h1>${isCart ? `<button class="clear-cart" type="button">Clear Cart</button>` : ""}</section>`, isCart ? "/checkout" : "/notifications");
   }
 
-  function productPage(id) {
+  function legacyProductPage(id) {
     return page(`<section class="ProductDetailPage"><p class="route-alert" role="status">ID #${escapeHTML(id)} not found</p><div class="product-detail-layout"><div class="broken-media" aria-label="Source product image unavailable"></div><div class="product-detail-copy"><h1>Product</h1><strong>$0.00</strong><form class="local-form quantity-form" data-purpose="add to cart"><label for="quantity">Quantity</label><div class="quantity-control"><button type="button" aria-label="Decrease quantity">−</button><input id="quantity" name="quantity" type="number" min="1" value="1"><button type="button" aria-label="Increase quantity">+</button></div><button class="btn" type="submit">Add To Cart</button><p class="form-note" role="status"></p></form></div></div></section>`, `/product/${id}`);
+  }
+
+  function productImage(academyId) {
+    const images = {
+      6: "assets/images/shop-football-editorial.webp",
+      5: "assets/images/shop-padel-editorial.webp",
+      4: "assets/images/shop-tennis-editorial.webp"
+    };
+    return images[academyId] || images[6];
+  }
+
+  function productPage(id) {
+    const product = (data.products || []).find((item) => String(item.id) === String(id));
+    if (!product) return emptyPage("Product not found", `Product ID #${id} was not present in the captured public catalog.`, `/product/${id}`);
+    return page(`<section class="ProductDetailPage"><div class="product-detail-layout"><div class="product-detail-media"><img src="${productImage(product.academy_id)}" width="1536" height="1024" alt="${escapeHTML(product.name)}"></div><div class="product-detail-copy"><p class="eyebrow">ASA equipment</p><h1>${escapeHTML(product.name)}</h1><strong>${escapeHTML(product.discount_price || product.price || 0)} USD</strong><form class="local-form quantity-form" data-purpose="add to cart"><label for="quantity">Quantity</label><div class="quantity-control"><button type="button" aria-label="Decrease quantity">−</button><input id="quantity" name="quantity" type="number" min="1" value="1"><button type="button" aria-label="Increase quantity">+</button></div><button class="btn" type="submit">Add To Cart</button><p class="form-note" role="status"></p></form></div></div></section>`, `/product/${id}`);
   }
 
   function orderDetailsPage() {
@@ -370,14 +575,17 @@
 
   function teamPage() {
     const sections = data.employeeSections || [];
-    return page(`<section class="TeamPage"><div class="team-tabs" role="tablist">${sections.map((section, index) => `<button class="team-tab${index === 0 ? " is-active" : ""}" type="button" role="tab" data-team-id="${section.id}" aria-selected="${index === 0}">${escapeHTML(section.name)}</button>`).join("")}</div><div class="team-content"></div></section>`, "/our-team");
+    return page(`<section class="TeamPage TeamDirectory"><header class="TeamDirectory__hero"><p class="eyebrow">Our team</p><h1>THE PEOPLE<br>BEHIND PROGRESS.</h1><p>Directors, coaches and specialists connected by one training standard.</p></header><div class="team-tabs" role="tablist" aria-label="Team departments">${sections.map((section, index) => `<button class="team-tab${index === 0 ? " is-active" : ""}" type="button" role="tab" data-team-id="${section.id}" aria-selected="${index === 0}">${escapeHTML(section.name)}</button>`).join("")}</div><div class="team-content" aria-live="polite"></div></section>`, "/our-team");
   }
 
   function renderTeamSection(id) {
     const section = (data.employeeSections || []).find((item) => String(item.id) === String(id)) || (data.employeeSections || [])[0];
     const content = document.querySelector(".team-content");
     if (!section || !content) return;
-    content.innerHTML = section.employee_sub_sections.map((subsection) => `<section class="team-subsection"><h2>${escapeHTML(subsection.name)}</h2><div class="team-grid">${subsection.employees.map((employee) => `<article class="team-card"><div class="broken-media" aria-label="Source portrait unavailable"></div><h3>${escapeHTML(employee.name)}</h3><p>${escapeHTML(employee.position)}</p></article>`).join("")}</div></section>`).join("");
+    content.innerHTML = section.employee_sub_sections.map((subsection) => `<section class="team-subsection"><h2>${escapeHTML(subsection.name)}</h2><div class="team-grid">${subsection.employees.map((employee, index) => {
+      const initials = fixText(employee.name).split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join("").toUpperCase();
+      return `<article class="team-card"><div class="team-card__identity"><span>0${index + 1}</span><strong aria-hidden="true">${escapeHTML(initials)}</strong></div><div><h3>${escapeHTML(employee.name)}</h3><p>${escapeHTML(employee.position)}</p></div></article>`;
+    }).join("")}</div></section>`).join("");
   }
 
   function renderProductResults() {
@@ -387,17 +595,13 @@
     const results = document.querySelector(".product-results");
     if (!search || !category || !academy || !results) return;
     const query = search.value.trim().toLowerCase();
-    if (!query && !category.value && !academy.value) {
-      results.innerHTML = "";
-      return;
-    }
     const matches = (data.products || []).filter((product) => {
       const nameMatches = !query || fixText(product.name).toLowerCase().includes(query);
       const categoryMatches = !category.value || String(product.product_category_id) === category.value;
       const academyMatches = !academy.value || String(product.academy_id) === academy.value;
       return nameMatches && categoryMatches && academyMatches;
     });
-    results.innerHTML = matches.length ? `<div class="product-grid">${matches.map((product) => `<article class="product-card"><div class="broken-media" aria-label="Source product image unavailable"></div><h3>${escapeHTML(product.name)}</h3><strong>${escapeHTML(product.discount_price || product.price || 0)} USD</strong></article>`).join("")}</div>` : `<p class="no-results">No products found.</p>`;
+    results.innerHTML = matches.length ? `<div class="product-grid">${matches.map((product) => `<article class="product-card"><a href="#/product/${product.id}"><img src="${productImage(product.academy_id)}" width="1536" height="1024" loading="lazy" decoding="async" alt=""><span>${escapeHTML(product.name)}</span></a><strong>${escapeHTML(product.discount_price || product.price || 0)} USD</strong></article>`).join("")}</div>` : `<p class="no-results">No products found.</p>`;
   }
 
   function emptyPage(title, copy, path) {
@@ -430,6 +634,7 @@
 
   function bindEvents(path) {
     bindScrollProgress();
+    bindMegaMenu();
     const menuButton = document.querySelector(".menu-toggle");
     const menu = document.getElementById("mobile-menu");
     if (menuButton && menu) {
@@ -500,11 +705,19 @@
       });
     });
 
-    if (path === "/") bindHero();
+    if (path === "/") {
+      bindHero();
+      bindAcademyExplorer();
+      bindStorySteps();
+      bindCounters();
+      bindTrainingPlanner();
+      bindMagneticCTA();
+    }
     if (path === "/our-team") {
       const firstTab = document.querySelector(".team-tab");
       if (firstTab) renderTeamSection(firstTab.dataset.teamId);
-      document.querySelectorAll(".team-tab").forEach((tab) => {
+      const teamTabs = Array.from(document.querySelectorAll(".team-tab"));
+      teamTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
           document.querySelectorAll(".team-tab").forEach((item) => {
             const selected = item === tab;
@@ -514,15 +727,175 @@
           renderTeamSection(tab.dataset.teamId);
         });
       });
+      bindTabKeyboard(teamTabs, (index) => teamTabs[index].click());
     }
     if (path === "/products") {
+      const academyParam = new URLSearchParams(window.location.hash.split("?")[1] || "").get("academy");
+      const academySelect = document.querySelector('[name="product_academy"]');
+      if (academyParam && academySelect) academySelect.value = academyParam;
       document.querySelectorAll('[name="product_search"], [name="product_category"], [name="product_academy"]').forEach((control) => {
         control.addEventListener("input", renderProductResults);
         control.addEventListener("change", renderProductResults);
       });
+      renderProductResults();
     }
     hydrateForms();
     bindReveals();
+  }
+
+  function bindTabKeyboard(tabs, activate) {
+    tabs.forEach((tab, index) => tab.addEventListener("keydown", (event) => {
+      const keys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"];
+      if (!keys.includes(event.key)) return;
+      event.preventDefault();
+      let next = index;
+      if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % tabs.length;
+      if (event.key === "Home") next = 0;
+      if (event.key === "End") next = tabs.length - 1;
+      activate(next);
+      tabs[next].focus();
+    }));
+  }
+
+  function bindMegaMenu() {
+    if (megaOutsideHandler) document.removeEventListener("pointerdown", megaOutsideHandler);
+    if (megaKeyHandler) document.removeEventListener("keydown", megaKeyHandler);
+    const group = document.querySelector(".Header__academy");
+    const trigger = document.querySelector(".Header__academy-trigger");
+    const menu = document.querySelector(".Header__mega");
+    if (!group || !trigger || !menu) return;
+
+    const close = (returnFocus = false) => {
+      group.classList.remove("is-open");
+      trigger.setAttribute("aria-expanded", "false");
+      menu.setAttribute("aria-hidden", "true");
+      if (returnFocus) trigger.focus();
+    };
+    const open = () => {
+      group.classList.add("is-open");
+      trigger.setAttribute("aria-expanded", "true");
+      menu.setAttribute("aria-hidden", "false");
+    };
+
+    trigger.addEventListener("click", () => group.classList.contains("is-open") ? close() : open());
+    menu.addEventListener("click", (event) => { if (event.target.closest("a")) close(); });
+    megaOutsideHandler = (event) => { if (!group.contains(event.target)) close(); };
+    megaKeyHandler = (event) => { if (event.key === "Escape" && group.classList.contains("is-open")) close(true); };
+    document.addEventListener("pointerdown", megaOutsideHandler);
+    document.addEventListener("keydown", megaKeyHandler);
+  }
+
+  function bindAcademyExplorer() {
+    const tabs = Array.from(document.querySelectorAll("[data-academy-tab]"));
+    const panels = Array.from(document.querySelectorAll("[data-academy-panel]"));
+    if (!tabs.length || !panels.length) return;
+    const activate = (id) => {
+      tabs.forEach((tab) => {
+        const selected = tab.dataset.academyTab === id;
+        tab.classList.toggle("is-active", selected);
+        tab.setAttribute("aria-selected", String(selected));
+      });
+      panels.forEach((panel) => {
+        const selected = panel.dataset.academyPanel === id;
+        panel.classList.toggle("is-active", selected);
+        panel.setAttribute("aria-hidden", String(!selected));
+      });
+    };
+    tabs.forEach((tab) => tab.addEventListener("click", () => activate(tab.dataset.academyTab)));
+    bindTabKeyboard(tabs, (index) => activate(tabs[index].dataset.academyTab));
+  }
+
+  function bindStorySteps() {
+    if (storyObserver) storyObserver.disconnect();
+    const steps = Array.from(document.querySelectorAll("[data-story-step]"));
+    const title = document.querySelector("[data-story-title]");
+    if (!steps.length || !title) return;
+    const activate = (step) => {
+      title.textContent = step.dataset.storyLabel || "ASA";
+      steps.forEach((item) => {
+        const selected = item === step;
+        item.classList.toggle("is-active", selected);
+        item.setAttribute("aria-pressed", String(selected));
+      });
+    };
+    steps.forEach((step) => step.addEventListener("click", () => activate(step)));
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    storyObserver = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) activate(visible.target);
+    }, { root, rootMargin: "-30% 0px -30% 0px", threshold: [0.25, 0.6] });
+    steps.forEach((step) => storyObserver.observe(step));
+  }
+
+  function bindCounters() {
+    if (counterObserver) counterObserver.disconnect();
+    const counters = Array.from(document.querySelectorAll("[data-counter]"));
+    if (!counters.length) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const run = (counter) => {
+      const target = Number(counter.dataset.counter || 0);
+      if (reduced) {
+        counter.textContent = String(target);
+        return;
+      }
+      const started = performance.now();
+      const tick = (now) => {
+        const progress = Math.min(1, (now - started) / 900);
+        const eased = 1 - Math.pow(1 - progress, 4);
+        counter.textContent = String(Math.round(target * eased));
+        if (progress < 1 && counter.isConnected) window.requestAnimationFrame(tick);
+      };
+      window.requestAnimationFrame(tick);
+    };
+    if (!("IntersectionObserver" in window)) {
+      counters.forEach(run);
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      run(entry.target);
+      observer.unobserve(entry.target);
+    }), { root, threshold: 0.55 });
+    counterObserver = observer;
+    counters.forEach((counter) => observer.observe(counter));
+  }
+
+  function bindTrainingPlanner() {
+    const tabs = Array.from(document.querySelectorAll("[data-training-tab]"));
+    const panels = Array.from(document.querySelectorAll("[data-training-panel]"));
+    if (!tabs.length || !panels.length) return;
+    tabs.forEach((tab) => tab.addEventListener("click", () => {
+      const id = tab.dataset.trainingTab;
+      tabs.forEach((item) => {
+        const selected = item === tab;
+        item.classList.toggle("is-active", selected);
+        item.setAttribute("aria-selected", String(selected));
+      });
+      panels.forEach((panel) => {
+        const selected = panel.dataset.trainingPanel === id;
+        panel.classList.toggle("is-active", selected);
+        panel.setAttribute("aria-hidden", String(!selected));
+      });
+    }));
+    bindTabKeyboard(tabs, (index) => tabs[index].click());
+  }
+
+  function bindMagneticCTA() {
+    if (!window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)").matches) return;
+    document.querySelectorAll("[data-magnetic]").forEach((element) => {
+      element.addEventListener("pointermove", (event) => {
+        const bounds = element.getBoundingClientRect();
+        const horizontal = (event.clientX - bounds.left) / bounds.width;
+        const vertical = (event.clientY - bounds.top) / bounds.height;
+        element.classList.remove("magnetic-left", "magnetic-right", "magnetic-up", "magnetic-down");
+        if (horizontal < 0.35) element.classList.add("magnetic-left");
+        else if (horizontal > 0.65) element.classList.add("magnetic-right");
+        if (vertical < 0.4) element.classList.add("magnetic-up");
+        else if (vertical > 0.6) element.classList.add("magnetic-down");
+      });
+      element.addEventListener("pointerleave", () => element.classList.remove("magnetic-left", "magnetic-right", "magnetic-up", "magnetic-down"));
+    });
   }
 
   function bindScrollProgress() {
@@ -532,6 +905,7 @@
     const update = () => {
       const distance = Math.max(1, root.scrollHeight - root.clientHeight);
       progress.value = Math.min(1, Math.max(0, root.scrollTop / distance));
+      revealVisibleElements();
       scrollProgressFrame = 0;
     };
 
@@ -547,6 +921,20 @@
     revealObserver = null;
 
     const groups = [
+      ".section-heading",
+      ".value-rail__item",
+      ".AcademyExplorer__tabs > button, .AcademyExplorer__stage",
+      ".ASAStory__media, .ASAStory__intro",
+      ".ASAMetrics__heading, .ASAMetrics__grid article",
+      ".AchievementStory__lead, .AchievementStory__timeline article",
+      ".coach-tile",
+      ".TrainingRhythm > .section-heading, .TrainingRhythm__tabs, .TrainingRhythm__stage",
+      ".GearShowcase > .section-heading, .gear-panel",
+      ".SocialPulse__copy, .social-tile",
+      ".TrustWall__logos > div",
+      ".FinalCTA__content",
+      ".ShopEditorial__hero > *, .shop-edit, .ShopEditorial__closing",
+      ".TeamDirectory__hero > *, .team-tab",
       ".section-title",
       ".value-card",
       ".academy-card",
@@ -574,26 +962,38 @@
     groups.forEach((selector) => {
       document.querySelectorAll(selector).forEach((element, index) => {
         element.classList.add("reveal", `reveal-delay-${Math.min(index, 4)}`);
-        if (element.matches(".section-title")) element.classList.add("reveal--title");
-        if (element.matches(".academy-card, .member-card, .logo-card, .shop-offer, .category-offer, .team-card, .product-card")) element.classList.add("reveal--card");
-        if (element.matches("img, .page-hero__media, .gallery-row > *")) element.classList.add("reveal--media");
-        if (element.matches(".AboutASA__image, .OurCommitment__copy, .achievements-layout > img, .Raed__quote, .detail-section__copy, .page-hero__media")) element.classList.add("reveal--left");
-        if (element.matches(".AboutASA__copy, .OurCommitment img, .achievements-copy, .Raed__image, .detail-section__image, .page-hero__copy > *")) element.classList.add("reveal--right");
+        if (element.matches(".section-title, .section-heading, .ASAMetrics__heading, .TeamDirectory__hero > h1, .ShopEditorial__hero > div")) element.classList.add("reveal--title");
+        if (element.matches(".academy-card, .member-card, .logo-card, .shop-offer, .category-offer, .team-card, .product-card, .value-rail__item, .coach-tile")) element.classList.add("reveal--card");
+        if (element.matches("img, .page-hero__media, .gallery-row > *, .AcademyExplorer__stage, .gear-panel, .social-tile, .shop-edit")) element.classList.add("reveal--media");
+        if (element.matches(".AboutASA__image, .OurCommitment__copy, .achievements-layout > img, .Raed__quote, .detail-section__copy, .page-hero__media, .ASAStory__media, .AchievementStory__lead, .SocialPulse__copy")) element.classList.add("reveal--left");
+        if (element.matches(".AboutASA__copy, .OurCommitment img, .achievements-copy, .Raed__image, .detail-section__image, .page-hero__copy > *, .ASAStory__intro, .TrainingRhythm__stage")) element.classList.add("reveal--right");
+        if (element.matches(".AchievementStory__timeline article:nth-child(even), .social-tile:nth-child(even), .shop-edit:nth-child(even)")) element.classList.add("reveal--rotate");
         elements.add(element);
       });
     });
 
     if (!elements.size) return;
+    pendingRevealElements = elements;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
       elements.forEach((element) => element.classList.add("is-visible"));
       return;
     }
 
+    const revealElement = (element, observer) => {
+      element.classList.add("is-visible");
+      pendingRevealElements.delete(element);
+      observer.unobserve(element);
+    };
     revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+        revealElement(entry.target, observer);
+      });
+      const rootRect = root.getBoundingClientRect();
+      elements.forEach((element) => {
+        if (element.classList.contains("is-visible")) return;
+        const rect = element.getBoundingClientRect();
+        if (rect.bottom > rootRect.top && rect.top < rootRect.bottom) revealElement(element, observer);
       });
     }, {
       root,
@@ -601,6 +1001,18 @@
       threshold: 0.12
     });
     elements.forEach((element) => revealObserver.observe(element));
+  }
+
+  function revealVisibleElements() {
+    if (!pendingRevealElements.size) return;
+    const rootRect = root.getBoundingClientRect();
+    pendingRevealElements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      if (rect.bottom <= rootRect.top || rect.top >= rootRect.bottom) return;
+      element.classList.add("is-visible");
+      pendingRevealElements.delete(element);
+      if (revealObserver) revealObserver.unobserve(element);
+    });
   }
 
   function bindHero() {
@@ -627,15 +1039,19 @@
         }
         slide.classList.toggle("is-active", selected);
         slide.setAttribute("aria-hidden", String(!selected));
+        slide.toggleAttribute("inert", !selected);
       });
       pages.forEach((page, pageIndex) => {
-        if (pageIndex === current) page.setAttribute("aria-current", "true");
+        const selected = pageIndex === current;
+        page.setAttribute("aria-selected", String(selected));
+        if (selected) page.setAttribute("aria-current", "true");
         else page.removeAttribute("aria-current");
       });
     };
     document.querySelector(".HomeBanner__arrow--prev").addEventListener("click", () => show(current - 1));
     document.querySelector(".HomeBanner__arrow--next").addEventListener("click", () => show(current + 1));
     pages.forEach((page) => page.addEventListener("click", () => show(Number(page.dataset.heroPage))));
+    bindTabKeyboard(pages, (index) => show(index));
 
     if (window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)").matches) {
       let pointerFrame = 0;
@@ -658,6 +1074,11 @@
   function render() {
     if (revealObserver) revealObserver.disconnect();
     revealObserver = null;
+    pendingRevealElements = new Set();
+    if (storyObserver) storyObserver.disconnect();
+    storyObserver = null;
+    if (counterObserver) counterObserver.disconnect();
+    counterObserver = null;
     if (scrollProgressFrame) window.cancelAnimationFrame(scrollProgressFrame);
     scrollProgressFrame = 0;
     root.onscroll = null;
@@ -699,15 +1120,16 @@
       "/products": "ASA | Search",
       "/our-team": "ASA | Our Team",
       "/contact-us": "ASA | Contact Us",
-      "/sign-in": "ASA | Contact Us",
-      "/sign-up": "ASA | Contact Us",
-      "/forgot-password": "ASA | Contact Us",
+      "/sign-in": "ASA | Sign In",
+      "/sign-up": "ASA | Sign Up",
+      "/forgot-password": "ASA | Reset Password",
       "/checkout": "ASA | Checkout",
       "/notifications": "ASA | Notification",
       "/order-details": "ASA | Order Detail",
-      "/qr": "ASA | Order Detail"
+      "/qr": "ASA | Sections"
     };
-    document.title = /^\/enroll\//.test(path) ? "ASA | Enroll" : /^\/product\//.test(path) ? "ASA | undefined" : (routeTitles[path] || "Advanced Sports Academy");
+    const productHeading = document.querySelector(".ProductDetailPage h1, .EmptyPage h1");
+    document.title = /^\/enroll\//.test(path) ? "ASA | Enroll" : /^\/product\//.test(path) && productHeading ? `ASA | ${productHeading.textContent.trim()}` : (routeTitles[path] || "Advanced Sports Academy");
   }
 
   window.addEventListener("hashchange", render);
