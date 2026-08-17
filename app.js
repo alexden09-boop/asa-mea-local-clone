@@ -3,10 +3,15 @@
 
   const data = window.ASA_DATA || {};
   const root = document.getElementById("root");
-  let heroTimer = null;
+  let revealObserver = null;
 
   const localImages = {
-    heroes: ["assets/images/hero-football.jpg", "assets/images/hero-fitness.jpg", "assets/images/hero-padel.jpg"],
+    heroes: ["assets/images/hero-football-1600.webp", "assets/images/hero-fitness-1600.webp", "assets/images/hero-padel-1600.webp"],
+    heroSrcsets: [
+      "assets/images/hero-football-900.webp 900w, assets/images/hero-football-1600.webp 1600w",
+      "assets/images/hero-fitness-900.webp 900w, assets/images/hero-fitness-1600.webp 1600w",
+      "assets/images/hero-padel-900.webp 900w, assets/images/hero-padel-1600.webp 1600w"
+    ],
     values: [
       "assets/images/icon-development.png",
       "assets/images/icon-professionalism.png",
@@ -52,8 +57,15 @@
       .replace(/'/g, "&#039;");
   }
 
+  function sanitizedSourceMarkup(value) {
+    return fixText(value)
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+      .replace(/<(?:link|meta)\b[^>]*>/gi, "")
+      .replace(/\s(?:style|on[a-z]+)\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "");
+  }
+
   function safeHTML(value) {
-    const input = fixText(value);
+    const input = sanitizedSourceMarkup(value);
     const parsed = new DOMParser().parseFromString(input, "text/html");
     const allowed = new Set(["P", "BR", "STRONG", "B", "EM", "I", "UL", "OL", "LI"]);
     const clean = document.createElement("div");
@@ -80,7 +92,7 @@
   }
 
   function plainText(value) {
-    const parsed = new DOMParser().parseFromString(fixText(value), "text/html");
+    const parsed = new DOMParser().parseFromString(sanitizedSourceMarkup(value), "text/html");
     return (parsed.body.textContent || "").replace(/\s+/g, " ").trim();
   }
 
@@ -105,7 +117,7 @@
     return `
       <header class="Header">
         <div class="Header__inner">
-          <a class="Header__logo" href="#/" aria-label="ASA home"><img src="assets/images/logo.png" alt="Advanced Sports Academy"></a>
+          <a class="Header__logo" href="#/" aria-label="ASA home"><img src="assets/images/logo.png" width="251" height="250" alt="Advanced Sports Academy"></a>
           <nav class="Header__nav" aria-label="Main navigation">
             <a class="Header__link${active("/")}" href="#/">Home</a>
             <details class="Header__academy">
@@ -150,7 +162,7 @@
       <footer class="Footer">
         <div class="Footer__grid">
           <div class="Footer__brand">
-            <img src="assets/images/logo.png" alt="ASA">
+            <img src="assets/images/logo.png" width="251" height="250" loading="lazy" decoding="async" alt="ASA">
             <p>Sports teaches your child discipline, agility, endurance, team work, leadership, and much more...</p>
           </div>
           <nav class="Footer__links" aria-label="Footer academy links">
@@ -167,7 +179,7 @@
             <h3>STAY CONNECTED</h3>
             <div class="social-row"><a href="https://www.instagram.com/advancedsportsacademy/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a><a href="https://www.facebook.com/AdvancedSportsAcademy/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.tiktok.com/@asa_academy" target="_blank" rel="noreferrer" aria-label="TikTok">♪</a></div>
             <h3>DOWNLOAD THE APP</h3>
-            <div class="app-badges"><a class="app-badge" href="https://apps.apple.com/ae/app/advanced-sports-academy/id6636536554" target="_blank" rel="noreferrer"><img src="assets/images/app-store.png" alt=""><span>Download on the<br><b>App Store</b></span></a><a class="app-badge" href="https://play.google.com/store/apps/details?id=com.knockservices.asamea&amp;hl=en" target="_blank" rel="noreferrer"><img src="assets/images/google-play.png" alt=""><span>Get it on<br><b>Google Play</b></span></a></div>
+            <div class="app-badges"><a class="app-badge" href="https://apps.apple.com/ae/app/advanced-sports-academy/id6636536554" target="_blank" rel="noreferrer"><img src="assets/images/app-store.png" width="1200" height="1425" loading="lazy" decoding="async" alt=""><span>Download on the<br><b>App Store</b></span></a><a class="app-badge" href="https://play.google.com/store/apps/details?id=com.knockservices.asamea&amp;hl=en" target="_blank" rel="noreferrer"><img src="assets/images/google-play.png" width="500" height="500" loading="lazy" decoding="async" alt=""><span>Get it on<br><b>Google Play</b></span></a></div>
           </div>
         </div>
       </footer>
@@ -187,7 +199,7 @@
       <section class="HomeBanner" aria-label="Featured ASA programs">
         ${heroItems.map((item, index) => `
           <article class="HomeBanner__slide${index === 0 ? " is-active" : ""}" data-slide="${index}" aria-hidden="${index !== 0}">
-            <img class="HomeBanner__image" src="${localImages.heroes[index]}" alt="">
+            <img class="HomeBanner__image" ${index === 0 ? `src="${localImages.heroes[index]}" srcset="${localImages.heroSrcsets[index]}" fetchpriority="high"` : `data-src="${localImages.heroes[index]}" data-srcset="${localImages.heroSrcsets[index]}" loading="lazy"`} sizes="100vw" width="1600" height="871" decoding="async" alt="">
             <div class="HomeBanner__content">
               <h1 class="HomeBanner__title">${escapeHTML(item.title)}</h1>
               <p class="HomeBanner__copy">${escapeHTML(plainText(item.description))}</p>
@@ -195,36 +207,39 @@
           </article>`).join("")}
         <button class="HomeBanner__arrow HomeBanner__arrow--prev" type="button" aria-label="Previous slide">←</button>
         <button class="HomeBanner__arrow HomeBanner__arrow--next" type="button" aria-label="Next slide">→</button>
+        <div class="HomeBanner__pagination" aria-label="Choose featured program">
+          ${heroItems.map((item, index) => `<button type="button" data-hero-page="${index}" aria-label="Show slide ${index + 1}: ${escapeHTML(item.title)}"${index === 0 ? ' aria-current="true"' : ""}></button>`).join("")}
+        </div>
       </section>
       <section class="SectionWe">
         <div class="SectionWe__grid">
-          ${values.map((item, index) => `<article class="value-card"><img src="${localImages.values[index]}" alt=""><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(plainText(item.description))}</p></article>`).join("")}
+          ${values.map((item, index) => `<article class="value-card"><img src="${localImages.values[index]}" alt=""><h2>${escapeHTML(item.title)}</h2><p>${escapeHTML(plainText(item.description))}</p></article>`).join("")}
         </div>
       </section>
       <section class="SectionOurAcdemy">
         <div class="container">
           <h2 class="section-title">Our Academy</h2>
           <div class="academy-grid">
-            ${academies.map((item) => `<article class="academy-card"><div class="academy-card__image"><img src="${localImages.academies[item.id]}" alt="${escapeHTML(item.name)}"></div><div class="academy-card__body"><h3>${escapeHTML(item.name)}</h3><p>${escapeHTML(item.title)}</p><a href="#/academy/${item.id}">Learn More</a></div></article>`).join("")}
+            ${academies.map((item) => `<article class="academy-card"><div class="academy-card__image"><img src="${localImages.academies[item.id]}" loading="lazy" decoding="async" alt="${escapeHTML(item.name)}"></div><div class="academy-card__body"><h3>${escapeHTML(item.name)}</h3><p>${escapeHTML(item.title)}</p><a href="#/academy/${item.id}">Learn More</a></div></article>`).join("")}
           </div>
         </div>
       </section>
-      <section class="SectionMember">
+      ${members.length ? `<section class="SectionMember">
         <div class="container"><h2 class="section-title">Our Members</h2><div class="member-grid">${members.map((item) => `<article class="member-card"><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(plainText(item.description))}</p></article>`).join("")}</div></div>
-      </section>
+      </section>` : ""}
       <section class="AboutASA">
-        <div class="container"><h2 class="section-title">${escapeHTML(data.about && data.about.title)}</h2><div class="AboutASA__layout"><img class="AboutASA__image" src="assets/images/about-asa.png" alt="ASA sports equipment"><div class="AboutASA__copy">${safeHTML(data.about && data.about.description)}</div></div></div>
+        <div class="container"><h2 class="section-title">${escapeHTML(data.about && data.about.title)}</h2><div class="AboutASA__layout"><img class="AboutASA__image" src="assets/images/about-asa.png" width="711" height="1079" loading="lazy" decoding="async" alt="ASA sports equipment"><div class="AboutASA__copy">${safeHTML(data.about && data.about.description)}</div></div></div>
       </section>
       <section class="OurPartner">
-        <h2 class="section-title">Our Partners</h2><div class="logo-grid">${["assets/images/partner-egypt.png", "assets/images/partner-uae.png"].map((src) => `<div class="logo-card"><img src="${src}" alt="Partner logo"></div>`).join("")}</div>
+        <h2 class="section-title">Our Partners</h2><div class="logo-grid">${["assets/images/partner-egypt.png", "assets/images/partner-uae.png"].map((src) => `<div class="logo-card"><img src="${src}" loading="lazy" decoding="async" alt="Partner logo"></div>`).join("")}</div>
       </section>
       <section class="OurSponsors">
-        <h2 class="section-title">Our Sponsors</h2><div class="logo-grid">${["assets/images/sponsor-nox.png", "assets/images/sponsor-knock.png", "assets/images/sponsor-gerimax.png"].map((src) => `<div class="logo-card"><img src="${src}" alt="Sponsor logo"></div>`).join("")}</div>
+        <h2 class="section-title">Our Sponsors</h2><div class="logo-grid">${["assets/images/sponsor-nox.png", "assets/images/sponsor-knock.png", "assets/images/sponsor-gerimax.png"].map((src) => `<div class="logo-card"><img src="${src}" loading="lazy" decoding="async" alt="Sponsor logo"></div>`).join("")}</div>
       </section>
-      <section class="OurCommitment"><div class="OurCommitment__layout"><div class="OurCommitment__copy"><h2>${escapeHTML(data.commitment && data.commitment.title)}</h2><p>${escapeHTML(plainText(data.commitment && data.commitment.description))}</p></div><img src="assets/images/commitment.jpg" alt="Athlete training with battle ropes"></div></section>
-      <section class="OurAchievements"><h2 class="section-title">${escapeHTML(data.achievements && data.achievements.title)}</h2><div class="achievements-layout"><img src="assets/images/achievements.png" alt="First-place trophy"><div class="achievements-copy">${safeHTML(data.achievements && data.achievements.description)}</div></div></section>
-      <section class="Raed"><div class="Raed__layout"><blockquote class="Raed__quote"><strong>TRUST<br>THE PROCESS</strong><small>- RAED AL SADDIK -</small></blockquote><img class="Raed__image" src="assets/images/quote-raed.png" alt="Raed Al Saddik"></div></section>
-      <section class="Youtube"><h2 class="section-title">Follow Us For The Latest Updates!</h2><div class="Youtube__layout"><img class="Youtube__image" src="assets/images/youtube.png" alt="Trust the process on YouTube"><a class="btn" href="https://www.youtube.com/@ASA-LEBANON" target="_blank" rel="noreferrer">Visit us on YouTube</a></div></section>
+      <section class="OurCommitment"><div class="OurCommitment__layout"><div class="OurCommitment__copy"><h2>${escapeHTML(data.commitment && data.commitment.title)}</h2><p>${escapeHTML(plainText(data.commitment && data.commitment.description))}</p></div><img src="assets/images/commitment.jpg" width="1843" height="1003" loading="lazy" decoding="async" alt="Athlete training with battle ropes"></div></section>
+      <section class="OurAchievements"><h2 class="section-title">${escapeHTML(data.achievements && data.achievements.title)}</h2><div class="achievements-layout"><img src="assets/images/achievements.png" width="456" height="516" loading="lazy" decoding="async" alt="First-place trophy"><div class="achievements-copy">${safeHTML(data.achievements && data.achievements.description)}</div></div></section>
+      <section class="Raed"><div class="Raed__layout"><blockquote class="Raed__quote"><strong>TRUST<br>THE PROCESS</strong><small>- RAED AL SADDIK -</small></blockquote><img class="Raed__image" src="assets/images/quote-raed.png" width="569" height="570" loading="lazy" decoding="async" alt="Raed Al Saddik"></div></section>
+      <section class="Youtube"><h2 class="section-title">Follow Us For The Latest Updates!</h2><div class="Youtube__layout"><img class="Youtube__image" src="assets/images/youtube.png" width="648" height="385" loading="lazy" decoding="async" alt="Trust the process on YouTube"><a class="btn" href="https://www.youtube.com/@ASA-LEBANON" target="_blank" rel="noreferrer">Visit us on YouTube</a></div></section>
     `, "/");
   }
 
@@ -504,28 +519,95 @@
       });
     }
     hydrateForms();
+    bindReveals();
+  }
+
+  function bindReveals() {
+    if (revealObserver) revealObserver.disconnect();
+    revealObserver = null;
+
+    const groups = [
+      ".SectionOurAcdemy .section-title",
+      ".academy-card",
+      ".AboutASA .section-title",
+      ".AboutASA__image, .AboutASA__copy",
+      ".OurPartner .section-title, .OurSponsors .section-title",
+      ".OurPartner .logo-card",
+      ".OurSponsors .logo-card",
+      ".OurCommitment__copy, .OurCommitment img",
+      ".OurAchievements .section-title",
+      ".achievements-layout > *",
+      ".Raed__quote, .Raed__image",
+      ".Youtube .section-title, .Youtube__image, .Youtube .btn",
+      ".detail-section__copy, .detail-section__image",
+      ".gallery-section .section-title",
+      ".gallery-row > *",
+      ".shop-offer",
+      ".category-offer",
+      ".team-card",
+      ".product-card"
+    ];
+
+    const elements = [];
+    groups.forEach((selector) => {
+      document.querySelectorAll(selector).forEach((element, index) => {
+        element.classList.add("reveal", `reveal-delay-${Math.min(index, 4)}`);
+        elements.push(element);
+      });
+    });
+
+    if (!elements.length) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+      elements.forEach((element) => element.classList.add("is-visible"));
+      return;
+    }
+
+    revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, {
+      root,
+      rootMargin: "0px 0px -8% 0px",
+      threshold: 0.12
+    });
+    elements.forEach((element) => revealObserver.observe(element));
   }
 
   function bindHero() {
     const slides = Array.from(document.querySelectorAll(".HomeBanner__slide"));
+    const pages = Array.from(document.querySelectorAll("[data-hero-page]"));
     if (!slides.length) return;
     let current = 0;
     const show = (index) => {
       current = (index + slides.length) % slides.length;
       slides.forEach((slide, slideIndex) => {
         const selected = slideIndex === current;
+        const image = slide.querySelector("img[data-src]");
+        if (selected && image) {
+          image.src = image.dataset.src;
+          if (image.dataset.srcset) image.srcset = image.dataset.srcset;
+          image.removeAttribute("data-src");
+          image.removeAttribute("data-srcset");
+        }
         slide.classList.toggle("is-active", selected);
         slide.setAttribute("aria-hidden", String(!selected));
+      });
+      pages.forEach((page, pageIndex) => {
+        if (pageIndex === current) page.setAttribute("aria-current", "true");
+        else page.removeAttribute("aria-current");
       });
     };
     document.querySelector(".HomeBanner__arrow--prev").addEventListener("click", () => show(current - 1));
     document.querySelector(".HomeBanner__arrow--next").addEventListener("click", () => show(current + 1));
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) heroTimer = window.setInterval(() => show(current + 1), 5000);
+    pages.forEach((page) => page.addEventListener("click", () => show(Number(page.dataset.heroPage))));
   }
 
   function render() {
-    if (heroTimer) window.clearInterval(heroTimer);
-    heroTimer = null;
+    if (revealObserver) revealObserver.disconnect();
+    revealObserver = null;
     const path = routePath();
     let markup;
     if (path === "/") markup = home();
