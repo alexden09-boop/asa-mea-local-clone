@@ -1,0 +1,245 @@
+[
+  {
+    "endpoint": "/academies",
+    "status": 200,
+    "bytes": 18163,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/academies/6",
+    "status": 200,
+    "bytes": 6175,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/academies/5",
+    "status": 200,
+    "bytes": 7680,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/academies/4",
+    "status": 200,
+    "bytes": 4322,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/home-banners",
+    "status": 200,
+    "bytes": 2869,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/services",
+    "status": 200,
+    "bytes": 3265,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/members",
+    "status": 200,
+    "bytes": 937,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/home-sections/1",
+    "status": 200,
+    "bytes": 2220,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/home-sections/2",
+    "status": 200,
+    "bytes": 899,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/home-sections/3",
+    "status": 200,
+    "bytes": 999,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/home-sections/4",
+    "status": 200,
+    "bytes": 531,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/partners",
+    "status": 200,
+    "bytes": 1063,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/sponsors",
+    "status": 200,
+    "bytes": 1455,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/social-medias",
+    "status": 200,
+    "bytes": 314,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/seos",
+    "status": 200,
+    "bytes": 83,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/shop-banners",
+    "status": 200,
+    "bytes": 489,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/featured-products",
+    "status": 200,
+    "bytes": 64,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/product-categories?on_website=1",
+    "status": 200,
+    "bytes": 90,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/product-positions",
+    "status": 200,
+    "bytes": 11,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/products",
+    "status": 200,
+    "bytes": 261832,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/employee-sections",
+    "status": 200,
+    "bytes": 31727,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/contact-informations",
+    "status": 200,
+    "bytes": 1041,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/general-settings",
+    "status": 200,
+    "bytes": 368,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/countries",
+    "status": 200,
+    "bytes": 13207,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/categories",
+    "status": 200,
+    "bytes": 758,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/fitness",
+    "status": 200,
+    "bytes": 2775,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  },
+  {
+    "endpoint": "/packages",
+    "status": 200,
+    "bytes": 54042,
+    "topType": "object",
+    "topKeys": [
+      "data"
+    ]
+  }
+]

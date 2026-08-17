@@ -1,0 +1,648 @@
+{
+  "assets": [
+    {
+      "contentType": "image/gif",
+      "id": "c48b2b1a2d756934",
+      "kind": "image",
+      "name": "load.gif",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/c48b2b1a2d756934.gif",
+      "url": "https://asa-mea.com/load.gif"
+    },
+    {
+      "contentType": "image/png",
+      "id": "253ee24ca12fd2b5",
+      "kind": "image",
+      "name": "logo.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/253ee24ca12fd2b5.png",
+      "url": "https://asa-mea.com/logo.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "8a830fbf365355b9",
+      "kind": "image",
+      "name": "googleicon.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/8a830fbf365355b9.png",
+      "url": "https://asa-mea.com/googleicon.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "220cfad0453b34e9",
+      "kind": "image",
+      "name": "appleicon.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/220cfad0453b34e9.png",
+      "url": "https://asa-mea.com/appleicon.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0c0eb19ae4b24a6a",
+      "kind": "image",
+      "name": "1720180146.3838.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/0c0eb19ae4b24a6a.jpg",
+      "url": "https://asa-mea.com/api/public/media/1720180146.3838.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "2d25d5dd03b414cb",
+      "kind": "image",
+      "name": "1720182837.1863.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/2d25d5dd03b414cb.jpg",
+      "url": "https://asa-mea.com/api/public/media/1720182837.1863.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "3a93574923147a7b",
+      "kind": "image",
+      "name": "1720182820.298.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/3a93574923147a7b.jpg",
+      "url": "https://asa-mea.com/api/public/media/1720182820.298.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "39c4f32aef5e07be",
+      "kind": "image",
+      "name": "b4.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/39c4f32aef5e07be.jpg",
+      "url": "https://asa-mea.com/b4.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3c7bdf8e55b30d02",
+      "kind": "image",
+      "name": "1720182546.9481.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/3c7bdf8e55b30d02.png",
+      "url": "https://asa-mea.com/api/public/media/1720182546.9481.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3f73136ad313ff45",
+      "kind": "image",
+      "name": "1720182519.4262.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/3f73136ad313ff45.png",
+      "url": "https://asa-mea.com/api/public/media/1720182519.4262.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "850af1db03c6a5ee",
+      "kind": "image",
+      "name": "1720182465.016.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/850af1db03c6a5ee.png",
+      "url": "https://asa-mea.com/api/public/media/1720182465.016.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "cec87601d6fb0a58",
+      "kind": "image",
+      "name": "1720182436.7592.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/cec87601d6fb0a58.png",
+      "url": "https://asa-mea.com/api/public/media/1720182436.7592.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d986f7381c8a61e8",
+      "kind": "image",
+      "name": "1720182079.189.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/d986f7381c8a61e8.png",
+      "url": "https://asa-mea.com/api/public/media/1720182079.189.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "1a7af3e5a15d0e87",
+      "kind": "image",
+      "name": "1720451754.1766.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/1a7af3e5a15d0e87.png",
+      "url": "https://asa-mea.com/api/public/media/1720451754.1766.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b2096932e3465dc4",
+      "kind": "image",
+      "name": "1720452176.6424.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/b2096932e3465dc4.png",
+      "url": "https://asa-mea.com/api/public/media/1720452176.6424.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "eb182793312f9ffc",
+      "kind": "image",
+      "name": "1720452346.2265.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/eb182793312f9ffc.png",
+      "url": "https://asa-mea.com/api/public/media/1720452346.2265.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "f3f930e7463a0572",
+      "kind": "image",
+      "name": "1720184697.3432.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/f3f930e7463a0572.png",
+      "url": "https://asa-mea.com/api/public/media/1720184697.3432.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "5576ff96429c19ea",
+      "kind": "image",
+      "name": "1782995653.6345.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/5576ff96429c19ea.png",
+      "url": "https://asa-mea.com/api/public/media/1782995653.6345.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "0cf252102726d2f4",
+      "kind": "image",
+      "name": "1720426611.7867.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/0cf252102726d2f4.png",
+      "url": "https://asa-mea.com/api/public/media/1720426611.7867.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a1fd38975fc7b158",
+      "kind": "image",
+      "name": "1782995163.889.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/a1fd38975fc7b158.png",
+      "url": "https://asa-mea.com/api/public/media/1782995163.889.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "6e93432db7ae257d",
+      "kind": "image",
+      "name": "1782995285.2419.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/6e93432db7ae257d.png",
+      "url": "https://asa-mea.com/api/public/media/1782995285.2419.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2e2b4aa0a604cce2",
+      "kind": "image",
+      "name": "1782995251.4179.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/2e2b4aa0a604cce2.png",
+      "url": "https://asa-mea.com/api/public/media/1782995251.4179.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "e291a2ae7ef18b76",
+      "kind": "image",
+      "name": "1720185760.9268.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/e291a2ae7ef18b76.png",
+      "url": "https://asa-mea.com/api/public/media/1720185760.9268.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d1c910dd4589c671",
+      "kind": "image",
+      "name": "Path%2084.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/d1c910dd4589c671.png",
+      "url": "https://asa-mea.com/Path%2084.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "385f16f694ddfdbd",
+      "kind": "image",
+      "name": "Path%2088.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/385f16f694ddfdbd.png",
+      "url": "https://asa-mea.com/Path%2088.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "1a3c913f6d3c3177",
+      "kind": "image",
+      "name": "Group%2069.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/1a3c913f6d3c3177.png",
+      "url": "https://asa-mea.com/Group%2069.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "21e2453f36438f48",
+      "kind": "image",
+      "name": "1721023553.9554.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/21e2453f36438f48.png",
+      "url": "https://asa-mea.com/api/public/media/1721023553.9554.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "1514d9d4c2c22495",
+      "kind": "image",
+      "name": "Path%20129.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/1514d9d4c2c22495.png",
+      "url": "https://asa-mea.com/Path%20129.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4a2cd4f1a24775c8",
+      "kind": "image",
+      "name": "Path%20130.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/4a2cd4f1a24775c8.png",
+      "url": "https://asa-mea.com/Path%20130.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b1df91f4f853aa40",
+      "kind": "image",
+      "name": "1720451771.8139.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/b1df91f4f853aa40.png",
+      "url": "https://asa-mea.com/api/public/media/1720451771.8139.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "528fbe2e13233534",
+      "kind": "image",
+      "name": "1720452009.7626.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/528fbe2e13233534.png",
+      "url": "https://asa-mea.com/api/public/media/1720452009.7626.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "88b1c2ab73096675",
+      "kind": "image",
+      "name": "1720452194.9996.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/88b1c2ab73096675.png",
+      "url": "https://asa-mea.com/api/public/media/1720452194.9996.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a059094aa8a396d0",
+      "kind": "image",
+      "name": "LB.svg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/a059094aa8a396d0.svg",
+      "url": "https://purecatamphetamine.github.io/country-flag-icons/3x2/LB.svg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "bb081f752cf2308c",
+      "kind": "image",
+      "name": "padel_logo%20(1).png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/bb081f752cf2308c.png",
+      "url": "https://asa-mea.com/padel_logo%20(1).png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "9cfd118bc770cc28",
+      "kind": "image",
+      "name": "1720505895.8352.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/9cfd118bc770cc28.png",
+      "url": "https://asa-mea.com/api/public/media/1720505895.8352.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "8fc19a951eb0188b",
+      "kind": "image",
+      "name": "background.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/8fc19a951eb0188b.png",
+      "url": "https://asa-mea.com/background.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "7992d494d98f71d0",
+      "kind": "image",
+      "name": "StaticMapService.GetMapImage",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/7992d494d98f71d0.GetMapImage",
+      "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i1255115&2i838167&2e1&3u13&4m2&1u350&2u700&5m5&1e0&5sru&6sus&10b1&12b1&7s86a61f3bcc38d2cd&8e1&key=AIzaSyBkwGcH84AhE21RtFD322_3C4ge8To5DpI&token=35548"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2df31c076cb6d85f",
+      "kind": "image",
+      "name": "forage_shadow_v3-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/2df31c076cb6d85f.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_shadow_v3-2-medium.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4db20b02523d10d8",
+      "kind": "image",
+      "name": "forage_outline_v1-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/4db20b02523d10d8.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_outline_v1-2-medium.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "82e7ccf825eee6ef",
+      "kind": "image",
+      "name": "forage_window_v1-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/82e7ccf825eee6ef.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_window_v1-2-medium.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "476d7275d0ebf9ff",
+      "kind": "image",
+      "name": "tree_pinlet-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/476d7275d0ebf9ff.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/tree_pinlet-2-medium.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "41c2b0c7b3612b59",
+      "kind": "image",
+      "name": "restaurant_pinlet_v4-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/41c2b0c7b3612b59.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/restaurant_pinlet_v4-2-medium.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "da67889953ddda24",
+      "kind": "image",
+      "name": "shoppingbag_pinlet-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/da67889953ddda24.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/shoppingbag_pinlet-2-medium.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3e5d0f65debecfd6",
+      "kind": "image",
+      "name": "shield-rectangle-outer-1-small.9.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/3e5d0f65debecfd6.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-outer-1-small.9.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "c0268de8a027cb1e",
+      "kind": "image",
+      "name": "shield-rectangle-fill-1-small.9.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/c0268de8a027cb1e.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-fill-1-small.9.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2b85d054e2d0d7fe",
+      "kind": "image",
+      "name": "shield-rectangle-inner-1-small.9.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/2b85d054e2d0d7fe.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-inner-1-small.9.png&scale=4"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d308eb62c8a869f7",
+      "kind": "image",
+      "name": "school_pinlet-2-medium.png&scale=4",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/aef2c989-5329-48fb-8498-1877efeea109/d308eb62c8a869f7.png&scale=4",
+      "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/school_pinlet-2-medium.png&scale=4"
+    }
+  ],
+  "failures": [
+    {
+      "contentType": null,
+      "id": "e0e5086943439581",
+      "name": "undefined",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/undefined"
+    },
+    {
+      "contentType": null,
+      "id": "415473810c45f7d6",
+      "name": "1723120110.2463.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120110.2463.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "6ba39e3de60ad414",
+      "name": "1723120123.419.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120123.419.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "a8df72ee8bb1a7e6",
+      "name": "1723120134.2009.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120134.2009.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "a60c52964d0575f4",
+      "name": "1723120146.9022.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120146.9022.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "01e8830d9b884d5d",
+      "name": "1723120199.8169.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120199.8169.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "b14e68fb1f449b29",
+      "name": "1723120182.8603.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120182.8603.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "b2b96a3db8481f19",
+      "name": "1723120216.4596.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120216.4596.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "7c6a8bf2ca4ce5d0",
+      "name": "1723120229.1772.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120229.1772.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "9b07c9b3f7e9930a",
+      "name": "1723120161.5371.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723120161.5371.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "b4bb939118b8f4b3",
+      "name": "1723121163.3031.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121163.3031.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "aea5322e56867729",
+      "name": "1723121178.9246.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121178.9246.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "f119c934a2988adf",
+      "name": "1723121199.8983.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121199.8983.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "f447bf6e2f921794",
+      "name": "1723121136.9794.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121136.9794.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "a6f88f1faed38ab4",
+      "name": "1723121214.5711.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121214.5711.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "9fb59891db5170c5",
+      "name": "1723121399.041.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121399.041.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "a29211a023563399",
+      "name": "1723121367.9348.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121367.9348.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "21d2e0138d0ec76e",
+      "name": "1723121448.5639.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121448.5639.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "6cd9eaa02e8358e4",
+      "name": "1723121408.9851.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121408.9851.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "4931f4840e4c532b",
+      "name": "1723121576.6351.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121576.6351.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "15ff42d6a7c0e0b8",
+      "name": "1723121611.9651.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121611.9651.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "822df3819621477e",
+      "name": "1723121597.8382.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121597.8382.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "6cd8c1733c99e5b9",
+      "name": "1723121962.915.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121962.915.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "646d1d5e896835af",
+      "name": "1723121986.3905.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121986.3905.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "f59ab47368c440e7",
+      "name": "1723121705.7251.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121705.7251.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "cd0acbe4c7f9f18e",
+      "name": "1723122042.3393.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723122042.3393.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "fbd3da5250cc35e4",
+      "name": "1723122012.2981.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723122012.2981.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "ec4c96c0e8d46b89",
+      "name": "1723122027.4988.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723122027.4988.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "bda45bea5ab3bbca",
+      "name": "1723629177.2653.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723629177.2653.png"
+    },
+    {
+      "contentType": null,
+      "id": "8db1c705dea38ee1",
+      "name": "1723627968.5783.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723627968.5783.png"
+    },
+    {
+      "contentType": null,
+      "id": "81035fa521c1e0cc",
+      "name": "1723628015.9597.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723628015.9597.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "6efbd5093c200259",
+      "name": "1723628023.8853.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723628023.8853.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "32d8062ecd48249b",
+      "name": "1723628032.569.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723628032.569.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "1259a926716cff36",
+      "name": "1723642799.5205.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723642799.5205.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "423b8c6f97e559e0",
+      "name": "1723121489.4983.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723121489.4983.JPG"
+    },
+    {
+      "contentType": null,
+      "id": "d21b3a9242eac511",
+      "name": "1723813308.49.JPG",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/1723813308.49.JPG"
+    },
+    {
+      "contentType": "text/html",
+      "id": "bf9d4de15f4d793d",
+      "name": "stadium.jpg",
+      "reason": "Asset response type text/html is not valid for image",
+      "url": "https://asa-mea.com/assets/stadium.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "99fef0a097b9c168",
+      "name": "transparent.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at r$ (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://maps.gstatic.com/mapfiles/transparent.png"
+    }
+  ]
+}

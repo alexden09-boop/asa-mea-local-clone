@@ -1,0 +1,86 @@
+[
+  {
+    "name": "header",
+    "sourceSelector": ".Header",
+    "selector": ".Header",
+    "type": "navigation"
+  },
+  {
+    "name": "hero",
+    "sourceSelector": ".HomeBanner",
+    "selector": ".HomeBanner",
+    "type": "carousel-hero"
+  },
+  {
+    "name": "values",
+    "sourceSelector": ".SectionWe",
+    "selector": ".SectionWe",
+    "type": "feature-grid"
+  },
+  {
+    "name": "academy",
+    "sourceSelector": ".SectionOurAcdemy",
+    "selector": ".SectionOurAcdemy",
+    "type": "card-grid"
+  },
+  {
+    "name": "members",
+    "sourceSelector": ".SectionMember",
+    "selector": ".SectionMember",
+    "type": "stat-grid"
+  },
+  {
+    "name": "about",
+    "sourceSelector": ".AboutASA",
+    "selector": ".AboutASA",
+    "type": "split-content"
+  },
+  {
+    "name": "partners",
+    "sourceSelector": ".OurPartner",
+    "selector": ".OurPartner",
+    "type": "logo-grid"
+  },
+  {
+    "name": "sponsors",
+    "sourceSelector": ".OurSponsors",
+    "selector": ".OurSponsors",
+    "type": "logo-grid"
+  },
+  {
+    "name": "commitment",
+    "sourceSelector": ".OurCommitment",
+    "selector": ".OurCommitment",
+    "type": "split-content"
+  },
+  {
+    "name": "achievements",
+    "sourceSelector": ".OurAchievements",
+    "selector": ".OurAchievements",
+    "type": "timeline"
+  },
+  {
+    "name": "quote",
+    "sourceSelector": ".Raed",
+    "selector": ".Raed",
+    "type": "quote"
+  },
+  {
+    "name": "youtube",
+    "sourceSelector": ".Youtube",
+    "selector": ".Youtube",
+    "type": "video-embed"
+  },
+  {
+    "name": "footer",
+    "sourceSelector": ".Footer",
+    "selector": ".Footer",
+    "type": "footer"
+  },
+  {
+    "name": "copyright",
+    "sourceSelector": ".CopyRight",
+    "selector": ".CopyRight",
+    "type": "legal"
+  }
+]

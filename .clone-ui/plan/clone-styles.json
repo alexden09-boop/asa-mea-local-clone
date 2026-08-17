@@ -1,0 +1,156 @@
+{
+  ".AboutASA": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 760,
+    "padding": "30px 0px",
+    "position": "static",
+    "width": 1425
+  },
+  ".CopyRight": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(17, 17, 17)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 40,
+    "padding": "0px",
+    "position": "static",
+    "width": 1425
+  },
+  ".Footer": {
+    "backgroundColor": "rgb(51, 51, 51)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 245,
+    "padding": "38px 45px 18px",
+    "position": "static",
+    "width": 1425
+  },
+  ".Header": {
+    "backgroundColor": "rgb(51, 51, 51)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 98,
+    "padding": "0px",
+    "position": "fixed",
+    "width": 1440
+  },
+  ".HomeBanner": {
+    "backgroundColor": "rgb(74, 71, 70)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 775,
+    "padding": "0px",
+    "position": "relative",
+    "width": 1425
+  },
+  ".OurAchievements": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 619,
+    "padding": "34px 36px 20px",
+    "position": "static",
+    "width": 1425
+  },
+  ".OurCommitment": {
+    "backgroundColor": "rgb(51, 51, 51)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 300,
+    "padding": "0px",
+    "position": "static",
+    "width": 1425
+  },
+  ".OurPartner": {
+    "backgroundColor": "rgb(225, 224, 224)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 393,
+    "padding": "34px 42px 55px",
+    "position": "static",
+    "width": 1425
+  },
+  ".OurSponsors": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 409,
+    "padding": "36px 42px 75px",
+    "position": "static",
+    "width": 1425
+  },
+  ".Raed": {
+    "backgroundColor": "rgb(225, 224, 224)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 561,
+    "padding": "0px 30px",
+    "position": "static",
+    "width": 1425
+  },
+  ".SectionMember": {
+    "backgroundColor": "rgb(225, 224, 224)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 301,
+    "padding": "32px 37px 45px",
+    "position": "static",
+    "width": 1425
+  },
+  ".SectionOurAcdemy": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 578,
+    "padding": "33px 23px 84px",
+    "position": "static",
+    "width": 1425
+  },
+  ".SectionWe": {
+    "backgroundColor": "rgb(204, 19, 23)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 219,
+    "padding": "30px 22px 27px",
+    "position": "static",
+    "width": 1425
+  },
+  ".Youtube": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "Mulish, Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": 793,
+    "padding": "31px 0px 30px",
+    "position": "static",
+    "width": 1425
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {"feature": "fixed dark header", "evidence": ".clone-ui/source/nav-states.json:1"},
+  {"feature": "desktop section ordering and selectors", "evidence": ".clone-ui/source/section-map.json:1"},
+  {"feature": "home copy, headings, controls and nav labels", "evidence": ".clone-ui/source/content-inventory.json:1"},
+  {"feature": "home typography, dimensions and imagery", "evidence": ".clone-ui/source/section-styles.json:1"},
+  {"feature": "desktop home composition", "evidence": ".clone-ui/source/.captures/source-home-1440-fullpage.png"},
+  {"feature": "mobile menu overlay", "evidence": ".clone-ui/source/.captures/nav-mobile-open.png"},
+  {"feature": "mobile home flow", "evidence": ".clone-ui/source/.captures/source-home-375-top.png"},
+  {"feature": "academy page structure", "evidence": ".clone-ui/source/.captures/source-academy-football-1440-top.png"},
+  {"feature": "contact fields and location content", "evidence": ".clone-ui/source/content-contact-us.json:1"},
+  {"feature": "all captured field labels/options", "evidence": ".clone-ui/source/forms.json:1"},
+  {"feature": "public content dataset", "evidence": ".clone-ui/source/api/index.json:1"}
+]

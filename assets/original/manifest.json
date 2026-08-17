@@ -1,0 +1,308 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "26fedae36e2894a7",
+      "kind": "stylesheet",
+      "name": "index-DFuxWiTj.css",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/26fedae36e2894a7.css",
+      "url": "https://asa-mea.com/assets/index-DFuxWiTj.css"
+    },
+    {
+      "contentType": "",
+      "id": "987fc46c60aefe8a",
+      "kind": "stylesheet",
+      "name": "css2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/987fc46c60aefe8a",
+      "url": "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&display=swap"
+    },
+    {
+      "contentType": "",
+      "id": "07eec190b4ffd05d",
+      "kind": "stylesheet",
+      "name": "css2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/07eec190b4ffd05d",
+      "url": "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    },
+    {
+      "contentType": "image/gif",
+      "id": "c48b2b1a2d756934",
+      "kind": "image",
+      "name": "load.gif",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/c48b2b1a2d756934.gif",
+      "url": "https://asa-mea.com/load.gif"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "1b7e2086cb02ae62",
+      "kind": "font",
+      "name": "fa-solid-900-CZInPWNh.woff2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/1b7e2086cb02ae62.woff2",
+      "url": "https://asa-mea.com/assets/fa-solid-900-CZInPWNh.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "3e9f9189eeeceb52",
+      "kind": "font",
+      "name": "fa-regular-400-B-k0w3cK.woff2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/3e9f9189eeeceb52.woff2",
+      "url": "https://asa-mea.com/assets/fa-regular-400-B-k0w3cK.woff2"
+    },
+    {
+      "contentType": "image/png",
+      "id": "253ee24ca12fd2b5",
+      "kind": "image",
+      "name": "logo.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/253ee24ca12fd2b5.png",
+      "url": "https://asa-mea.com/logo.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "8a830fbf365355b9",
+      "kind": "image",
+      "name": "googleicon.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/8a830fbf365355b9.png",
+      "url": "https://asa-mea.com/googleicon.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "220cfad0453b34e9",
+      "kind": "image",
+      "name": "appleicon.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/220cfad0453b34e9.png",
+      "url": "https://asa-mea.com/appleicon.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0c0eb19ae4b24a6a",
+      "kind": "image",
+      "name": "1720180146.3838.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/0c0eb19ae4b24a6a.jpg",
+      "url": "https://asa-mea.com/api/public/media/1720180146.3838.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "2d25d5dd03b414cb",
+      "kind": "image",
+      "name": "1720182837.1863.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/2d25d5dd03b414cb.jpg",
+      "url": "https://asa-mea.com/api/public/media/1720182837.1863.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "3a93574923147a7b",
+      "kind": "image",
+      "name": "1720182820.298.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/3a93574923147a7b.jpg",
+      "url": "https://asa-mea.com/api/public/media/1720182820.298.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "39c4f32aef5e07be",
+      "kind": "image",
+      "name": "b4.jpg",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/39c4f32aef5e07be.jpg",
+      "url": "https://asa-mea.com/b4.jpg"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "615f4e3ce22ba1b2",
+      "kind": "font",
+      "name": "fa-brands-400-By5PU7E5.woff2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/615f4e3ce22ba1b2.woff2",
+      "url": "https://asa-mea.com/assets/fa-brands-400-By5PU7E5.woff2"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3c7bdf8e55b30d02",
+      "kind": "image",
+      "name": "1720182546.9481.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/3c7bdf8e55b30d02.png",
+      "url": "https://asa-mea.com/api/public/media/1720182546.9481.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3f73136ad313ff45",
+      "kind": "image",
+      "name": "1720182519.4262.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/3f73136ad313ff45.png",
+      "url": "https://asa-mea.com/api/public/media/1720182519.4262.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "850af1db03c6a5ee",
+      "kind": "image",
+      "name": "1720182465.016.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/850af1db03c6a5ee.png",
+      "url": "https://asa-mea.com/api/public/media/1720182465.016.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "cec87601d6fb0a58",
+      "kind": "image",
+      "name": "1720182436.7592.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/cec87601d6fb0a58.png",
+      "url": "https://asa-mea.com/api/public/media/1720182436.7592.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d986f7381c8a61e8",
+      "kind": "image",
+      "name": "1720182079.189.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/d986f7381c8a61e8.png",
+      "url": "https://asa-mea.com/api/public/media/1720182079.189.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "1a7af3e5a15d0e87",
+      "kind": "image",
+      "name": "1720451754.1766.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/1a7af3e5a15d0e87.png",
+      "url": "https://asa-mea.com/api/public/media/1720451754.1766.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b2096932e3465dc4",
+      "kind": "image",
+      "name": "1720452176.6424.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/b2096932e3465dc4.png",
+      "url": "https://asa-mea.com/api/public/media/1720452176.6424.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "eb182793312f9ffc",
+      "kind": "image",
+      "name": "1720452346.2265.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/eb182793312f9ffc.png",
+      "url": "https://asa-mea.com/api/public/media/1720452346.2265.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "f3f930e7463a0572",
+      "kind": "image",
+      "name": "1720184697.3432.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/f3f930e7463a0572.png",
+      "url": "https://asa-mea.com/api/public/media/1720184697.3432.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "5576ff96429c19ea",
+      "kind": "image",
+      "name": "1782995653.6345.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/5576ff96429c19ea.png",
+      "url": "https://asa-mea.com/api/public/media/1782995653.6345.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "0cf252102726d2f4",
+      "kind": "image",
+      "name": "1720426611.7867.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/0cf252102726d2f4.png",
+      "url": "https://asa-mea.com/api/public/media/1720426611.7867.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a1fd38975fc7b158",
+      "kind": "image",
+      "name": "1782995163.889.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/a1fd38975fc7b158.png",
+      "url": "https://asa-mea.com/api/public/media/1782995163.889.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "6e93432db7ae257d",
+      "kind": "image",
+      "name": "1782995285.2419.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/6e93432db7ae257d.png",
+      "url": "https://asa-mea.com/api/public/media/1782995285.2419.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2e2b4aa0a604cce2",
+      "kind": "image",
+      "name": "1782995251.4179.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/2e2b4aa0a604cce2.png",
+      "url": "https://asa-mea.com/api/public/media/1782995251.4179.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "e291a2ae7ef18b76",
+      "kind": "image",
+      "name": "1720185760.9268.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/e291a2ae7ef18b76.png",
+      "url": "https://asa-mea.com/api/public/media/1720185760.9268.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d1c910dd4589c671",
+      "kind": "image",
+      "name": "Path%2084.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/d1c910dd4589c671.png",
+      "url": "https://asa-mea.com/Path%2084.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "385f16f694ddfdbd",
+      "kind": "image",
+      "name": "Path%2088.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/385f16f694ddfdbd.png",
+      "url": "https://asa-mea.com/Path%2088.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "1a3c913f6d3c3177",
+      "kind": "image",
+      "name": "Group%2069.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/1a3c913f6d3c3177.png",
+      "url": "https://asa-mea.com/Group%2069.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "21e2453f36438f48",
+      "kind": "image",
+      "name": "1721023553.9554.png",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/21e2453f36438f48.png",
+      "url": "https://asa-mea.com/api/public/media/1721023553.9554.png"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "f35c55dba188141b",
+      "kind": "font",
+      "name": "fa-light-300-B_KFKMOT.woff2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/f35c55dba188141b.woff2",
+      "url": "https://asa-mea.com/assets/fa-light-300-B_KFKMOT.woff2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9be74f0ad6a19fcb",
+      "kind": "image",
+      "name": "svg-1",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/9be74f0ad6a19fcb.svg",
+      "url": "inline-svg:9be74f0ad6a19fcb"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4ebdd37e171fbae5",
+      "kind": "image",
+      "name": "svg-2",
+      "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/e57e8c69-203a-4bb9-be64-7decf1888c37/4ebdd37e171fbae5.svg",
+      "url": "inline-svg:4ebdd37e171fbae5"
+    }
+  ],
+  "failures": [
+    {
+      "contentType": null,
+      "id": "e0e5086943439581",
+      "name": "undefined",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+      "url": "https://asa-mea.com/api/public/media/undefined"
+    },
+    {
+      "contentType": "text/html",
+      "id": "bf92e8c4130479b6",
+      "name": "undefined",
+      "reason": "Asset response type text/html is not valid for stylesheet",
+      "url": "https://asa-mea.com/undefined"
+    }
+  ]
+}

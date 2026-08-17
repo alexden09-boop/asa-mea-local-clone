@@ -1,0 +1,44 @@
+{
+  "colors": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(51, 51, 51)",
+    "rgb(204, 20, 23)",
+    "rgb(211, 32, 38)",
+    "rgb(241, 241, 241)",
+    "rgba(255, 255, 255, 0)",
+    "rgb(204, 19, 23)",
+    "rgb(0, 122, 255)",
+    "rgb(225, 224, 224)",
+    "rgb(203, 20, 23)",
+    "rgb(255, 0, 0)"
+  ],
+  "fonts": [
+    "Mulish",
+    "\"Font Awesome 6 Pro\"",
+    "sans-serif",
+    "\"Font Awesome 6 Brands\""
+  ],
+  "mediaQueries": [
+    "(prefers-reduced-motion: reduce)",
+    "(max-width: 480px)",
+    "(max-width: 1024px)",
+    "(max-width: 767px)",
+    "(max-width: 1105px)",
+    "(max-width: 424px)",
+    "(max-width: 640px)",
+    "(max-width: 1023px)",
+    "(min-width: 767px)",
+    "(max-width: 374px)",
+    "(max-width: 1025px)",
+    "(max-width: 431px)",
+    "(max-width: 547px)",
+    "(max-width: 769px)",
+    "(max-width: 319px)",
+    "(max-width: 400px)",
+    "only screen and (max-width: 480px)",
+    "(pointer: fine)",
+    "(hover: none)",
+    "print"
+  ]
+}

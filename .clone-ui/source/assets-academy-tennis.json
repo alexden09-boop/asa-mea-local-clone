@@ -1,0 +1,2991 @@
+{
+  "inventory": {
+    "assets": [
+      {
+        "id": "f62e9cd98c473df8",
+        "kind": "script",
+        "name": "index-CvTwcyYy.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 82,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/index-CvTwcyYy.js"
+      },
+      {
+        "id": "26fedae36e2894a7",
+        "kind": "stylesheet",
+        "name": "index-DFuxWiTj.css",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "link"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 83,
+            "property": "href"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/index-DFuxWiTj.css"
+      },
+      {
+        "id": "987fc46c60aefe8a",
+        "kind": "stylesheet",
+        "name": "css2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&display=swap"
+      },
+      {
+        "id": "07eec190b4ffd05d",
+        "kind": "stylesheet",
+        "name": "css2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      },
+      {
+        "id": "c48b2b1a2d756934",
+        "kind": "image",
+        "name": "load.gif",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13284,
+            "property": "src"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13287,
+            "property": "src"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13290,
+            "property": "src"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13293,
+            "property": "src"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13296,
+            "property": "src"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13299,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/load.gif"
+      },
+      {
+        "id": "1b7e2086cb02ae62",
+        "kind": "font",
+        "name": "fa-solid-900-CZInPWNh.woff2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/fa-solid-900-CZInPWNh.woff2"
+      },
+      {
+        "id": "3e9f9189eeeceb52",
+        "kind": "font",
+        "name": "fa-regular-400-B-k0w3cK.woff2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/fa-regular-400-B-k0w3cK.woff2"
+      },
+      {
+        "id": "ba6dd24f89ba9e30",
+        "kind": "other",
+        "name": "academies",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/academies"
+      },
+      {
+        "id": "675b6250c765c11d",
+        "kind": "other",
+        "name": "home-banners",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/home-banners"
+      },
+      {
+        "id": "20dbb2ed1d1c18f1",
+        "kind": "other",
+        "name": "services",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/services"
+      },
+      {
+        "id": "e620df90625fffb4",
+        "kind": "other",
+        "name": "members",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/members"
+      },
+      {
+        "id": "8e22af3aafdfe617",
+        "kind": "other",
+        "name": "1",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/home-sections/1"
+      },
+      {
+        "id": "824267ac8014348c",
+        "kind": "other",
+        "name": "partners",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/partners"
+      },
+      {
+        "id": "eaaf1c6000a5dfde",
+        "kind": "other",
+        "name": "sponsors",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/sponsors"
+      },
+      {
+        "id": "77a0004ce77940fa",
+        "kind": "other",
+        "name": "2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/home-sections/2"
+      },
+      {
+        "id": "8cb415c8b7462313",
+        "kind": "other",
+        "name": "3",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/home-sections/3"
+      },
+      {
+        "id": "7cedad7458cd3bb2",
+        "kind": "other",
+        "name": "4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/home-sections/4"
+      },
+      {
+        "id": "1d6e78d5d65de4ef",
+        "kind": "other",
+        "name": "seos",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/seos"
+      },
+      {
+        "id": "64427520b38bf02a",
+        "kind": "other",
+        "name": "social-medias",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/social-medias"
+      },
+      {
+        "id": "253ee24ca12fd2b5",
+        "kind": "image",
+        "name": "logo.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "other"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 80,
+            "property": "href"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 119,
+            "property": "src"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 147,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/logo.png"
+      },
+      {
+        "id": "8a830fbf365355b9",
+        "kind": "image",
+        "name": "googleicon.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 156,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/googleicon.png"
+      },
+      {
+        "id": "220cfad0453b34e9",
+        "kind": "image",
+        "name": "appleicon.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 153,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/appleicon.png"
+      },
+      {
+        "id": "0c0eb19ae4b24a6a",
+        "kind": "image",
+        "name": "1720180146.3838.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720180146.3838.jpg"
+      },
+      {
+        "id": "e0e5086943439581",
+        "kind": "image",
+        "name": "undefined",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/undefined"
+      },
+      {
+        "id": "2d25d5dd03b414cb",
+        "kind": "image",
+        "name": "1720182837.1863.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182837.1863.jpg"
+      },
+      {
+        "id": "3a93574923147a7b",
+        "kind": "image",
+        "name": "1720182820.298.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182820.298.jpg"
+      },
+      {
+        "id": "bf92e8c4130479b6",
+        "kind": "stylesheet",
+        "name": "undefined",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "computedStyle",
+            "nodeId": 13222,
+            "property": "background-image"
+          },
+          {
+            "kind": "computedStyle",
+            "nodeId": 13249,
+            "property": "background-image"
+          },
+          {
+            "kind": "computedStyle",
+            "nodeId": 13268,
+            "property": "background-image"
+          },
+          {
+            "kind": "computedStyle",
+            "nodeId": 13274,
+            "property": "background-image"
+          },
+          {
+            "kind": "computedStyle",
+            "nodeId": 13313,
+            "property": "background-image"
+          },
+          {
+            "kind": "computedStyle",
+            "nodeId": 143,
+            "property": "background-image"
+          }
+        ],
+        "url": "https://asa-mea.com/undefined"
+      },
+      {
+        "id": "39c4f32aef5e07be",
+        "kind": "image",
+        "name": "b4.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/b4.jpg"
+      },
+      {
+        "id": "615f4e3ce22ba1b2",
+        "kind": "font",
+        "name": "fa-brands-400-By5PU7E5.woff2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/fa-brands-400-By5PU7E5.woff2"
+      },
+      {
+        "id": "3c7bdf8e55b30d02",
+        "kind": "image",
+        "name": "1720182546.9481.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182546.9481.png"
+      },
+      {
+        "id": "3f73136ad313ff45",
+        "kind": "image",
+        "name": "1720182519.4262.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182519.4262.png"
+      },
+      {
+        "id": "850af1db03c6a5ee",
+        "kind": "image",
+        "name": "1720182465.016.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182465.016.png"
+      },
+      {
+        "id": "cec87601d6fb0a58",
+        "kind": "image",
+        "name": "1720182436.7592.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182436.7592.png"
+      },
+      {
+        "id": "d986f7381c8a61e8",
+        "kind": "image",
+        "name": "1720182079.189.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720182079.189.png"
+      },
+      {
+        "id": "1a7af3e5a15d0e87",
+        "kind": "image",
+        "name": "1720451754.1766.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720451754.1766.png"
+      },
+      {
+        "id": "b2096932e3465dc4",
+        "kind": "image",
+        "name": "1720452176.6424.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13229,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720452176.6424.png"
+      },
+      {
+        "id": "eb182793312f9ffc",
+        "kind": "image",
+        "name": "1720452346.2265.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720452346.2265.png"
+      },
+      {
+        "id": "f3f930e7463a0572",
+        "kind": "image",
+        "name": "1720184697.3432.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720184697.3432.png"
+      },
+      {
+        "id": "5576ff96429c19ea",
+        "kind": "image",
+        "name": "1782995653.6345.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1782995653.6345.png"
+      },
+      {
+        "id": "0cf252102726d2f4",
+        "kind": "image",
+        "name": "1720426611.7867.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720426611.7867.png"
+      },
+      {
+        "id": "a1fd38975fc7b158",
+        "kind": "image",
+        "name": "1782995163.889.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1782995163.889.png"
+      },
+      {
+        "id": "6e93432db7ae257d",
+        "kind": "image",
+        "name": "1782995285.2419.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1782995285.2419.png"
+      },
+      {
+        "id": "2e2b4aa0a604cce2",
+        "kind": "image",
+        "name": "1782995251.4179.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1782995251.4179.png"
+      },
+      {
+        "id": "e291a2ae7ef18b76",
+        "kind": "image",
+        "name": "1720185760.9268.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720185760.9268.png"
+      },
+      {
+        "id": "d1c910dd4589c671",
+        "kind": "image",
+        "name": "Path%2084.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/Path%2084.png"
+      },
+      {
+        "id": "385f16f694ddfdbd",
+        "kind": "image",
+        "name": "Path%2088.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/Path%2088.png"
+      },
+      {
+        "id": "1a3c913f6d3c3177",
+        "kind": "image",
+        "name": "Group%2069.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/Group%2069.png"
+      },
+      {
+        "id": "21e2453f36438f48",
+        "kind": "image",
+        "name": "1721023553.9554.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1721023553.9554.png"
+      },
+      {
+        "id": "f35c55dba188141b",
+        "kind": "font",
+        "name": "fa-light-300-B_KFKMOT.woff2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          },
+          {
+            "kind": "resource",
+            "property": "fetch"
+          },
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/fa-light-300-B_KFKMOT.woff2"
+      },
+      {
+        "id": "01e68f70d0a404c2",
+        "kind": "other",
+        "name": "6",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/academies/6"
+      },
+      {
+        "id": "1514d9d4c2c22495",
+        "kind": "image",
+        "name": "Path%20129.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13243,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/Path%20129.png"
+      },
+      {
+        "id": "4a2cd4f1a24775c8",
+        "kind": "image",
+        "name": "Path%20130.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13248,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/Path%20130.png"
+      },
+      {
+        "id": "b1df91f4f853aa40",
+        "kind": "image",
+        "name": "1720451771.8139.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720451771.8139.png"
+      },
+      {
+        "id": "415473810c45f7d6",
+        "kind": "image",
+        "name": "1723120110.2463.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120110.2463.jpg"
+      },
+      {
+        "id": "6ba39e3de60ad414",
+        "kind": "image",
+        "name": "1723120123.419.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120123.419.jpg"
+      },
+      {
+        "id": "a8df72ee8bb1a7e6",
+        "kind": "image",
+        "name": "1723120134.2009.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120134.2009.jpg"
+      },
+      {
+        "id": "a60c52964d0575f4",
+        "kind": "image",
+        "name": "1723120146.9022.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120146.9022.jpg"
+      },
+      {
+        "id": "01e8830d9b884d5d",
+        "kind": "image",
+        "name": "1723120199.8169.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120199.8169.jpg"
+      },
+      {
+        "id": "b14e68fb1f449b29",
+        "kind": "image",
+        "name": "1723120182.8603.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120182.8603.jpg"
+      },
+      {
+        "id": "b2b96a3db8481f19",
+        "kind": "image",
+        "name": "1723120216.4596.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120216.4596.jpg"
+      },
+      {
+        "id": "7c6a8bf2ca4ce5d0",
+        "kind": "image",
+        "name": "1723120229.1772.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120229.1772.jpg"
+      },
+      {
+        "id": "9b07c9b3f7e9930a",
+        "kind": "image",
+        "name": "1723120161.5371.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723120161.5371.jpg"
+      },
+      {
+        "id": "973fd7223d2f0f87",
+        "kind": "other",
+        "name": "5",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/academies/5"
+      },
+      {
+        "id": "528fbe2e13233534",
+        "kind": "image",
+        "name": "1720452009.7626.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720452009.7626.png"
+      },
+      {
+        "id": "b4bb939118b8f4b3",
+        "kind": "image",
+        "name": "1723121163.3031.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121163.3031.JPG"
+      },
+      {
+        "id": "aea5322e56867729",
+        "kind": "image",
+        "name": "1723121178.9246.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121178.9246.JPG"
+      },
+      {
+        "id": "f119c934a2988adf",
+        "kind": "image",
+        "name": "1723121199.8983.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121199.8983.JPG"
+      },
+      {
+        "id": "f447bf6e2f921794",
+        "kind": "image",
+        "name": "1723121136.9794.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121136.9794.JPG"
+      },
+      {
+        "id": "a6f88f1faed38ab4",
+        "kind": "image",
+        "name": "1723121214.5711.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121214.5711.JPG"
+      },
+      {
+        "id": "9fb59891db5170c5",
+        "kind": "image",
+        "name": "1723121399.041.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121399.041.JPG"
+      },
+      {
+        "id": "a29211a023563399",
+        "kind": "image",
+        "name": "1723121367.9348.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121367.9348.JPG"
+      },
+      {
+        "id": "21d2e0138d0ec76e",
+        "kind": "image",
+        "name": "1723121448.5639.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121448.5639.JPG"
+      },
+      {
+        "id": "6cd9eaa02e8358e4",
+        "kind": "image",
+        "name": "1723121408.9851.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121408.9851.JPG"
+      },
+      {
+        "id": "4931f4840e4c532b",
+        "kind": "image",
+        "name": "1723121576.6351.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121576.6351.JPG"
+      },
+      {
+        "id": "15ff42d6a7c0e0b8",
+        "kind": "image",
+        "name": "1723121611.9651.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121611.9651.JPG"
+      },
+      {
+        "id": "822df3819621477e",
+        "kind": "image",
+        "name": "1723121597.8382.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121597.8382.JPG"
+      },
+      {
+        "id": "a5c31c505ddb8e29",
+        "kind": "other",
+        "name": "4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/academies/4"
+      },
+      {
+        "id": "88b1c2ab73096675",
+        "kind": "image",
+        "name": "1720452194.9996.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 13265,
+            "property": "src"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720452194.9996.png"
+      },
+      {
+        "id": "6cd8c1733c99e5b9",
+        "kind": "image",
+        "name": "1723121962.915.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121962.915.JPG"
+      },
+      {
+        "id": "646d1d5e896835af",
+        "kind": "image",
+        "name": "1723121986.3905.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121986.3905.JPG"
+      },
+      {
+        "id": "f59ab47368c440e7",
+        "kind": "image",
+        "name": "1723121705.7251.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121705.7251.JPG"
+      },
+      {
+        "id": "cd0acbe4c7f9f18e",
+        "kind": "image",
+        "name": "1723122042.3393.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723122042.3393.JPG"
+      },
+      {
+        "id": "fbd3da5250cc35e4",
+        "kind": "image",
+        "name": "1723122012.2981.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723122012.2981.JPG"
+      },
+      {
+        "id": "ec4c96c0e8d46b89",
+        "kind": "image",
+        "name": "1723122027.4988.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723122027.4988.JPG"
+      },
+      {
+        "id": "731824a0adfb4681",
+        "kind": "other",
+        "name": "fitness",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/fitness"
+      },
+      {
+        "id": "bda45bea5ab3bbca",
+        "kind": "image",
+        "name": "1723629177.2653.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723629177.2653.png"
+      },
+      {
+        "id": "8db1c705dea38ee1",
+        "kind": "image",
+        "name": "1723627968.5783.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723627968.5783.png"
+      },
+      {
+        "id": "81035fa521c1e0cc",
+        "kind": "image",
+        "name": "1723628015.9597.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723628015.9597.jpg"
+      },
+      {
+        "id": "6efbd5093c200259",
+        "kind": "image",
+        "name": "1723628023.8853.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723628023.8853.jpg"
+      },
+      {
+        "id": "32d8062ecd48249b",
+        "kind": "image",
+        "name": "1723628032.569.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723628032.569.jpg"
+      },
+      {
+        "id": "bfb3390f7a7c1790",
+        "kind": "other",
+        "name": "general-settings",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/general-settings"
+      },
+      {
+        "id": "a059094aa8a396d0",
+        "kind": "image",
+        "name": "LB.svg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://purecatamphetamine.github.io/country-flag-icons/3x2/LB.svg"
+      },
+      {
+        "id": "bb081f752cf2308c",
+        "kind": "image",
+        "name": "padel_logo%20(1).png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/padel_logo%20(1).png"
+      },
+      {
+        "id": "85af627dc6de11bc",
+        "kind": "other",
+        "name": "categories",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/categories?load_with%5B%5D=subCategories"
+      },
+      {
+        "id": "5b596c63c19234d5",
+        "kind": "other",
+        "name": "shop-banners",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/shop-banners"
+      },
+      {
+        "id": "52780ce3a816bc60",
+        "kind": "other",
+        "name": "product-categories",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/product-categories?on_website=1"
+      },
+      {
+        "id": "4c39781f39e1a053",
+        "kind": "other",
+        "name": "product-positions",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/product-positions?load_with%5B%5D=product.variations"
+      },
+      {
+        "id": "08a0eb19aeb2bd99",
+        "kind": "other",
+        "name": "featured-products",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/featured-products"
+      },
+      {
+        "id": "9cfd118bc770cc28",
+        "kind": "image",
+        "name": "1720505895.8352.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1720505895.8352.png"
+      },
+      {
+        "id": "1259a926716cff36",
+        "kind": "image",
+        "name": "1723642799.5205.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723642799.5205.jpg"
+      },
+      {
+        "id": "423b8c6f97e559e0",
+        "kind": "image",
+        "name": "1723121489.4983.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          },
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723121489.4983.JPG"
+      },
+      {
+        "id": "f9eef6ac38a46d6d",
+        "kind": "other",
+        "name": "products",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/products?filters%5Bacademy_id%5D%5Btype%5D=equals&on_website=1&load_with%5B%5D=variations"
+      },
+      {
+        "id": "5682c93082d18079",
+        "kind": "other",
+        "name": "product-categories",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/product-categories"
+      },
+      {
+        "id": "2645667690cbb71b",
+        "kind": "other",
+        "name": "employee-sections",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/employee-sections?load_with%5B%5D=sectionEmployees&load_with%5B%5D=employeeSubSections.subSectionEmployees"
+      },
+      {
+        "id": "d21b3a9242eac511",
+        "kind": "image",
+        "name": "1723813308.49.JPG",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/media/1723813308.49.JPG"
+      },
+      {
+        "id": "9b18e67b9ea6a78a",
+        "kind": "other",
+        "name": "contact-informations",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          },
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/contact-informations"
+      },
+      {
+        "id": "3c8bbb33f54c7f02",
+        "kind": "script",
+        "name": "js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 5899,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/api/js?libraries=maps%2Ccore&key=AIzaSyBkwGcH84AhE21RtFD322_3C4ge8To5DpI&v=weekly&callback=google.maps.__ib__"
+      },
+      {
+        "id": "bf9d4de15f4d793d",
+        "kind": "image",
+        "name": "stadium.jpg",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/assets/stadium.jpg"
+      },
+      {
+        "id": "1258f6f0962c8a84",
+        "kind": "script",
+        "name": "main.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 6720,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/main.js"
+      },
+      {
+        "id": "5f5c51e95ea86725",
+        "kind": "other",
+        "name": "gen_204",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true"
+      },
+      {
+        "id": "50e7812b66a2b46c",
+        "kind": "script",
+        "name": "map.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 6722,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/map.js"
+      },
+      {
+        "id": "ca32472552ab7734",
+        "kind": "script",
+        "name": "common.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 6721,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/common.js"
+      },
+      {
+        "id": "e1188e7a066cea21",
+        "kind": "other",
+        "name": "countries",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/countries"
+      },
+      {
+        "id": "8fc19a951eb0188b",
+        "kind": "image",
+        "name": "background.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://asa-mea.com/background.png"
+      },
+      {
+        "id": "d0da34da3b3e1902",
+        "kind": "script",
+        "name": "util.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 8382,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/util.js"
+      },
+      {
+        "id": "5ebc05cd4b93a5f1",
+        "kind": "other",
+        "name": "notifications",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/notifications?filters%5Btype%5D%5Btype%5D=equals&filters%5Btype%5D%5Bfilter%5D=Push+Notification"
+      },
+      {
+        "id": "778e3f0acd2dc261",
+        "kind": "other",
+        "name": "get-unseen-notification",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/get-unseen-notification?date_time=2026-08-17+14:22:27"
+      },
+      {
+        "id": "917bd070f86734fa",
+        "kind": "other",
+        "name": "get-unseen-notification",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://asa-mea.com/api/public/api/get-unseen-notification?date_time=2026-08-17+14:22:39"
+      },
+      {
+        "id": "7992d494d98f71d0",
+        "kind": "image",
+        "name": "StaticMapService.GetMapImage",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i1255115&2i838167&2e1&3u13&4m2&1u350&2u700&5m5&1e0&5sru&6sus&10b1&12b1&7s86a61f3bcc38d2cd&8e1&key=AIzaSyBkwGcH84AhE21RtFD322_3C4ge8To5DpI&token=35548"
+      },
+      {
+        "id": "b9fbe2c6f01aafad",
+        "kind": "script",
+        "name": "marker.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 11959,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/marker.js"
+      },
+      {
+        "id": "2c74455d01773e8b",
+        "kind": "stylesheet",
+        "name": "openhand_8_8.cur",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "css"
+          }
+        ],
+        "url": "https://maps.gstatic.com/mapfiles/openhand_8_8.cur"
+      },
+      {
+        "id": "62ebfcf1df4bc678",
+        "kind": "script",
+        "name": "log.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 11991,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/log.js"
+      },
+      {
+        "id": "f1f4d398fe6d9d55",
+        "kind": "other",
+        "name": "mapConfigs:batchGet",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/api/mapsjs/mapConfigs:batchGet?language=ru&region=US&alt=protojson&major_version=65&minor_version=12f&map_ids=86a61f3bcc38d2cd&map_type=1"
+      },
+      {
+        "id": "ab90528fac13ecd2",
+        "kind": "script",
+        "name": "webgl.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 11996,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/webgl.js"
+      },
+      {
+        "id": "97a99e8965aee626",
+        "kind": "other",
+        "name": "GetViewportInfo",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://maps.googleapis.com/$rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService/GetViewportInfo"
+      },
+      {
+        "id": "23034875a61e97ee",
+        "kind": "script",
+        "name": "onion.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 12792,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/onion.js"
+      },
+      {
+        "id": "f059bd9dfc56ac92",
+        "kind": "other",
+        "name": "dc39674520292a68",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "xmlhttprequest"
+          }
+        ],
+        "url": "https://mapsresources-pa.googleapis.com/v1/styleTables/dc39674520292a68?configVersion=e3dec3f84b7764496b89ce7fd835e7f4&configSet=roadmap&version=sdk-15292277032783095514"
+      },
+      {
+        "id": "ff0afb34083dca17",
+        "kind": "script",
+        "name": "controls.js",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "script"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 12793,
+            "property": "src"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/12f/intl/ru_ALL/controls.js"
+      },
+      {
+        "id": "18d0ef5e1834bc9d",
+        "kind": "stylesheet",
+        "name": "css",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "link"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 12808,
+            "property": "href"
+          }
+        ],
+        "url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400,500,700&lang=ru"
+      },
+      {
+        "id": "56d6581cb5fcc0a1",
+        "kind": "stylesheet",
+        "name": "css2",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "link"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 12809,
+            "property": "href"
+          }
+        ],
+        "url": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&text=%EE%97%8C%EE%94%AF%EE%BF%B7%EE%94%B6%EE%A7%B9&lang=ru"
+      },
+      {
+        "id": "c1de02d17b869968",
+        "kind": "stylesheet",
+        "name": "css",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "link"
+          },
+          {
+            "kind": "attribute",
+            "nodeId": 12807,
+            "property": "href"
+          }
+        ],
+        "url": "https://fonts.googleapis.com/css?family=Google+Sans+Text:400&text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&lang=ru"
+      },
+      {
+        "id": "99fef0a097b9c168",
+        "kind": "image",
+        "name": "transparent.png",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.gstatic.com/mapfiles/transparent.png"
+      },
+      {
+        "id": "2df31c076cb6d85f",
+        "kind": "image",
+        "name": "forage_shadow_v3-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_shadow_v3-2-medium.png&scale=4"
+      },
+      {
+        "id": "4db20b02523d10d8",
+        "kind": "image",
+        "name": "forage_outline_v1-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_outline_v1-2-medium.png&scale=4"
+      },
+      {
+        "id": "82e7ccf825eee6ef",
+        "kind": "image",
+        "name": "forage_window_v1-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_window_v1-2-medium.png&scale=4"
+      },
+      {
+        "id": "476d7275d0ebf9ff",
+        "kind": "image",
+        "name": "tree_pinlet-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/tree_pinlet-2-medium.png&scale=4"
+      },
+      {
+        "id": "41c2b0c7b3612b59",
+        "kind": "image",
+        "name": "restaurant_pinlet_v4-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/restaurant_pinlet_v4-2-medium.png&scale=4"
+      },
+      {
+        "id": "da67889953ddda24",
+        "kind": "image",
+        "name": "shoppingbag_pinlet-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/shoppingbag_pinlet-2-medium.png&scale=4"
+      },
+      {
+        "id": "3e5d0f65debecfd6",
+        "kind": "image",
+        "name": "shield-rectangle-outer-1-small.9.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-outer-1-small.9.png&scale=4"
+      },
+      {
+        "id": "c0268de8a027cb1e",
+        "kind": "image",
+        "name": "shield-rectangle-fill-1-small.9.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-fill-1-small.9.png&scale=4"
+      },
+      {
+        "id": "2b85d054e2d0d7fe",
+        "kind": "image",
+        "name": "shield-rectangle-inner-1-small.9.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-inner-1-small.9.png&scale=4"
+      },
+      {
+        "id": "d308eb62c8a869f7",
+        "kind": "image",
+        "name": "school_pinlet-2-medium.png&scale=4",
+        "sources": [
+          {
+            "kind": "resource",
+            "property": "img"
+          }
+        ],
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/school_pinlet-2-medium.png&scale=4"
+      }
+    ],
+    "id": "e24bac48-2af6-4d04-b952-94fad2a3e529",
+    "inlineSvgs": [],
+    "pageUrl": "https://asa-mea.com/#/academy/4",
+    "summary": {
+      "byKind": {
+        "font": 4,
+        "image": 85,
+        "other": 34,
+        "script": 11,
+        "stylesheet": 8,
+        "video": 0
+      },
+      "inlineSvgCount": 0,
+      "totalCount": 142
+    }
+  },
+  "bundle": {
+    "assets": [
+      {
+        "contentType": "image/gif",
+        "id": "c48b2b1a2d756934",
+        "kind": "image",
+        "name": "load.gif",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/c48b2b1a2d756934.gif",
+        "url": "https://asa-mea.com/load.gif"
+      },
+      {
+        "contentType": "image/png",
+        "id": "253ee24ca12fd2b5",
+        "kind": "image",
+        "name": "logo.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/253ee24ca12fd2b5.png",
+        "url": "https://asa-mea.com/logo.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "8a830fbf365355b9",
+        "kind": "image",
+        "name": "googleicon.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/8a830fbf365355b9.png",
+        "url": "https://asa-mea.com/googleicon.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "220cfad0453b34e9",
+        "kind": "image",
+        "name": "appleicon.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/220cfad0453b34e9.png",
+        "url": "https://asa-mea.com/appleicon.png"
+      },
+      {
+        "contentType": "image/jpeg",
+        "id": "0c0eb19ae4b24a6a",
+        "kind": "image",
+        "name": "1720180146.3838.jpg",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/0c0eb19ae4b24a6a.jpg",
+        "url": "https://asa-mea.com/api/public/media/1720180146.3838.jpg"
+      },
+      {
+        "contentType": "image/jpeg",
+        "id": "2d25d5dd03b414cb",
+        "kind": "image",
+        "name": "1720182837.1863.jpg",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/2d25d5dd03b414cb.jpg",
+        "url": "https://asa-mea.com/api/public/media/1720182837.1863.jpg"
+      },
+      {
+        "contentType": "image/jpeg",
+        "id": "3a93574923147a7b",
+        "kind": "image",
+        "name": "1720182820.298.jpg",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/3a93574923147a7b.jpg",
+        "url": "https://asa-mea.com/api/public/media/1720182820.298.jpg"
+      },
+      {
+        "contentType": "image/jpeg",
+        "id": "39c4f32aef5e07be",
+        "kind": "image",
+        "name": "b4.jpg",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/39c4f32aef5e07be.jpg",
+        "url": "https://asa-mea.com/b4.jpg"
+      },
+      {
+        "contentType": "image/png",
+        "id": "3c7bdf8e55b30d02",
+        "kind": "image",
+        "name": "1720182546.9481.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/3c7bdf8e55b30d02.png",
+        "url": "https://asa-mea.com/api/public/media/1720182546.9481.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "3f73136ad313ff45",
+        "kind": "image",
+        "name": "1720182519.4262.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/3f73136ad313ff45.png",
+        "url": "https://asa-mea.com/api/public/media/1720182519.4262.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "850af1db03c6a5ee",
+        "kind": "image",
+        "name": "1720182465.016.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/850af1db03c6a5ee.png",
+        "url": "https://asa-mea.com/api/public/media/1720182465.016.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "cec87601d6fb0a58",
+        "kind": "image",
+        "name": "1720182436.7592.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/cec87601d6fb0a58.png",
+        "url": "https://asa-mea.com/api/public/media/1720182436.7592.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "d986f7381c8a61e8",
+        "kind": "image",
+        "name": "1720182079.189.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/d986f7381c8a61e8.png",
+        "url": "https://asa-mea.com/api/public/media/1720182079.189.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "1a7af3e5a15d0e87",
+        "kind": "image",
+        "name": "1720451754.1766.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/1a7af3e5a15d0e87.png",
+        "url": "https://asa-mea.com/api/public/media/1720451754.1766.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "b2096932e3465dc4",
+        "kind": "image",
+        "name": "1720452176.6424.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/b2096932e3465dc4.png",
+        "url": "https://asa-mea.com/api/public/media/1720452176.6424.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "eb182793312f9ffc",
+        "kind": "image",
+        "name": "1720452346.2265.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/eb182793312f9ffc.png",
+        "url": "https://asa-mea.com/api/public/media/1720452346.2265.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "f3f930e7463a0572",
+        "kind": "image",
+        "name": "1720184697.3432.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/f3f930e7463a0572.png",
+        "url": "https://asa-mea.com/api/public/media/1720184697.3432.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "5576ff96429c19ea",
+        "kind": "image",
+        "name": "1782995653.6345.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/5576ff96429c19ea.png",
+        "url": "https://asa-mea.com/api/public/media/1782995653.6345.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "0cf252102726d2f4",
+        "kind": "image",
+        "name": "1720426611.7867.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/0cf252102726d2f4.png",
+        "url": "https://asa-mea.com/api/public/media/1720426611.7867.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "a1fd38975fc7b158",
+        "kind": "image",
+        "name": "1782995163.889.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/a1fd38975fc7b158.png",
+        "url": "https://asa-mea.com/api/public/media/1782995163.889.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "6e93432db7ae257d",
+        "kind": "image",
+        "name": "1782995285.2419.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/6e93432db7ae257d.png",
+        "url": "https://asa-mea.com/api/public/media/1782995285.2419.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "2e2b4aa0a604cce2",
+        "kind": "image",
+        "name": "1782995251.4179.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/2e2b4aa0a604cce2.png",
+        "url": "https://asa-mea.com/api/public/media/1782995251.4179.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "e291a2ae7ef18b76",
+        "kind": "image",
+        "name": "1720185760.9268.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/e291a2ae7ef18b76.png",
+        "url": "https://asa-mea.com/api/public/media/1720185760.9268.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "d1c910dd4589c671",
+        "kind": "image",
+        "name": "Path%2084.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/d1c910dd4589c671.png",
+        "url": "https://asa-mea.com/Path%2084.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "385f16f694ddfdbd",
+        "kind": "image",
+        "name": "Path%2088.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/385f16f694ddfdbd.png",
+        "url": "https://asa-mea.com/Path%2088.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "1a3c913f6d3c3177",
+        "kind": "image",
+        "name": "Group%2069.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/1a3c913f6d3c3177.png",
+        "url": "https://asa-mea.com/Group%2069.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "21e2453f36438f48",
+        "kind": "image",
+        "name": "1721023553.9554.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/21e2453f36438f48.png",
+        "url": "https://asa-mea.com/api/public/media/1721023553.9554.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "1514d9d4c2c22495",
+        "kind": "image",
+        "name": "Path%20129.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/1514d9d4c2c22495.png",
+        "url": "https://asa-mea.com/Path%20129.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "4a2cd4f1a24775c8",
+        "kind": "image",
+        "name": "Path%20130.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/4a2cd4f1a24775c8.png",
+        "url": "https://asa-mea.com/Path%20130.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "b1df91f4f853aa40",
+        "kind": "image",
+        "name": "1720451771.8139.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/b1df91f4f853aa40.png",
+        "url": "https://asa-mea.com/api/public/media/1720451771.8139.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "528fbe2e13233534",
+        "kind": "image",
+        "name": "1720452009.7626.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/528fbe2e13233534.png",
+        "url": "https://asa-mea.com/api/public/media/1720452009.7626.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "88b1c2ab73096675",
+        "kind": "image",
+        "name": "1720452194.9996.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/88b1c2ab73096675.png",
+        "url": "https://asa-mea.com/api/public/media/1720452194.9996.png"
+      },
+      {
+        "contentType": "image/svg+xml",
+        "id": "a059094aa8a396d0",
+        "kind": "image",
+        "name": "LB.svg",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/a059094aa8a396d0.svg",
+        "url": "https://purecatamphetamine.github.io/country-flag-icons/3x2/LB.svg"
+      },
+      {
+        "contentType": "image/png",
+        "id": "bb081f752cf2308c",
+        "kind": "image",
+        "name": "padel_logo%20(1).png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/bb081f752cf2308c.png",
+        "url": "https://asa-mea.com/padel_logo%20(1).png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "9cfd118bc770cc28",
+        "kind": "image",
+        "name": "1720505895.8352.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/9cfd118bc770cc28.png",
+        "url": "https://asa-mea.com/api/public/media/1720505895.8352.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "8fc19a951eb0188b",
+        "kind": "image",
+        "name": "background.png",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/8fc19a951eb0188b.png",
+        "url": "https://asa-mea.com/background.png"
+      },
+      {
+        "contentType": "image/png",
+        "id": "7992d494d98f71d0",
+        "kind": "image",
+        "name": "StaticMapService.GetMapImage",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/7992d494d98f71d0.GetMapImage",
+        "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i1255115&2i838167&2e1&3u13&4m2&1u350&2u700&5m5&1e0&5sru&6sus&10b1&12b1&7s86a61f3bcc38d2cd&8e1&key=AIzaSyBkwGcH84AhE21RtFD322_3C4ge8To5DpI&token=35548"
+      },
+      {
+        "contentType": "image/png",
+        "id": "2df31c076cb6d85f",
+        "kind": "image",
+        "name": "forage_shadow_v3-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/2df31c076cb6d85f.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_shadow_v3-2-medium.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "4db20b02523d10d8",
+        "kind": "image",
+        "name": "forage_outline_v1-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/4db20b02523d10d8.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_outline_v1-2-medium.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "82e7ccf825eee6ef",
+        "kind": "image",
+        "name": "forage_window_v1-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/82e7ccf825eee6ef.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/tactile/forage_window_v1-2-medium.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "476d7275d0ebf9ff",
+        "kind": "image",
+        "name": "tree_pinlet-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/476d7275d0ebf9ff.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/tree_pinlet-2-medium.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "41c2b0c7b3612b59",
+        "kind": "image",
+        "name": "restaurant_pinlet_v4-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/41c2b0c7b3612b59.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/restaurant_pinlet_v4-2-medium.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "da67889953ddda24",
+        "kind": "image",
+        "name": "shoppingbag_pinlet-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/da67889953ddda24.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/shoppingbag_pinlet-2-medium.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "3e5d0f65debecfd6",
+        "kind": "image",
+        "name": "shield-rectangle-outer-1-small.9.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/3e5d0f65debecfd6.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-outer-1-small.9.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "c0268de8a027cb1e",
+        "kind": "image",
+        "name": "shield-rectangle-fill-1-small.9.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/c0268de8a027cb1e.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-fill-1-small.9.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "2b85d054e2d0d7fe",
+        "kind": "image",
+        "name": "shield-rectangle-inner-1-small.9.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/2b85d054e2d0d7fe.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/road/shield-rectangle-inner-1-small.9.png&scale=4"
+      },
+      {
+        "contentType": "image/png",
+        "id": "d308eb62c8a869f7",
+        "kind": "image",
+        "name": "school_pinlet-2-medium.png&scale=4",
+        "path": "C:\\Users\\Alex\\AppData\\Local\\Temp/browser-use/assets/847cf395-b1d5-4c4c-81b4-132af8138e1e/d308eb62c8a869f7.png&scale=4",
+        "url": "https://maps.googleapis.com/maps/vt/icon/name=assets/icons/poi/quantum/modern_pinlet/school_pinlet-2-medium.png&scale=4"
+      }
+    ],
+    "failures": [
+      {
+        "contentType": null,
+        "id": "e0e5086943439581",
+        "name": "undefined",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/undefined"
+      },
+      {
+        "contentType": null,
+        "id": "415473810c45f7d6",
+        "name": "1723120110.2463.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120110.2463.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "6ba39e3de60ad414",
+        "name": "1723120123.419.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120123.419.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "a8df72ee8bb1a7e6",
+        "name": "1723120134.2009.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120134.2009.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "a60c52964d0575f4",
+        "name": "1723120146.9022.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120146.9022.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "01e8830d9b884d5d",
+        "name": "1723120199.8169.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120199.8169.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "b14e68fb1f449b29",
+        "name": "1723120182.8603.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120182.8603.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "b2b96a3db8481f19",
+        "name": "1723120216.4596.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120216.4596.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "7c6a8bf2ca4ce5d0",
+        "name": "1723120229.1772.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120229.1772.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "9b07c9b3f7e9930a",
+        "name": "1723120161.5371.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723120161.5371.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "b4bb939118b8f4b3",
+        "name": "1723121163.3031.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121163.3031.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "aea5322e56867729",
+        "name": "1723121178.9246.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121178.9246.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "f119c934a2988adf",
+        "name": "1723121199.8983.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121199.8983.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "f447bf6e2f921794",
+        "name": "1723121136.9794.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121136.9794.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "a6f88f1faed38ab4",
+        "name": "1723121214.5711.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121214.5711.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "9fb59891db5170c5",
+        "name": "1723121399.041.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121399.041.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "a29211a023563399",
+        "name": "1723121367.9348.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121367.9348.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "21d2e0138d0ec76e",
+        "name": "1723121448.5639.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121448.5639.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "6cd9eaa02e8358e4",
+        "name": "1723121408.9851.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121408.9851.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "4931f4840e4c532b",
+        "name": "1723121576.6351.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121576.6351.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "15ff42d6a7c0e0b8",
+        "name": "1723121611.9651.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121611.9651.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "822df3819621477e",
+        "name": "1723121597.8382.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121597.8382.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "6cd8c1733c99e5b9",
+        "name": "1723121962.915.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121962.915.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "646d1d5e896835af",
+        "name": "1723121986.3905.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121986.3905.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "f59ab47368c440e7",
+        "name": "1723121705.7251.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121705.7251.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "cd0acbe4c7f9f18e",
+        "name": "1723122042.3393.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723122042.3393.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "fbd3da5250cc35e4",
+        "name": "1723122012.2981.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723122012.2981.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "ec4c96c0e8d46b89",
+        "name": "1723122027.4988.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723122027.4988.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "bda45bea5ab3bbca",
+        "name": "1723629177.2653.png",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723629177.2653.png"
+      },
+      {
+        "contentType": null,
+        "id": "8db1c705dea38ee1",
+        "name": "1723627968.5783.png",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723627968.5783.png"
+      },
+      {
+        "contentType": null,
+        "id": "81035fa521c1e0cc",
+        "name": "1723628015.9597.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723628015.9597.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "6efbd5093c200259",
+        "name": "1723628023.8853.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723628023.8853.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "32d8062ecd48249b",
+        "name": "1723628032.569.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723628032.569.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "1259a926716cff36",
+        "name": "1723642799.5205.jpg",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723642799.5205.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "423b8c6f97e559e0",
+        "name": "1723121489.4983.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723121489.4983.JPG"
+      },
+      {
+        "contentType": null,
+        "id": "d21b3a9242eac511",
+        "name": "1723813308.49.JPG",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: Error: Asset request failed with HTTP 404\n    at r$ (<anonymous>:1:102)",
+        "url": "https://asa-mea.com/api/public/media/1723813308.49.JPG"
+      },
+      {
+        "contentType": "text/html",
+        "id": "bf9d4de15f4d793d",
+        "name": "stadium.jpg",
+        "reason": "Asset response type text/html is not valid for image",
+        "url": "https://asa-mea.com/assets/stadium.jpg"
+      },
+      {
+        "contentType": null,
+        "id": "99fef0a097b9c168",
+        "name": "transparent.png",
+        "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at r$ (<anonymous>:1:41)\n    at <anonymous>:1:354",
+        "url": "https://maps.gstatic.com/mapfiles/transparent.png"
+      }
+    ],
+    "summary": {
+      "downloadedCount": 47,
+      "elapsedMs": 1859.5215999999782,
+      "failedCount": 38,
+      "requestedCount": 85
+    }
+  }
+}

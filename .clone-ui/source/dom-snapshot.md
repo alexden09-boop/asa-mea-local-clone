@@ -1,0 +1,145 @@
+- link:
+  - /url: "#/"
+- text:   
+- text: 
+- link "Home":
+  - /url: "#/"
+- text: Academy
+- generic: 
+- link "Fitness":
+  - /url: "#/fitness"
+- link "Reservation":
+  - /url: "#/reservation"
+- link "Private Training":
+  - /url: "#/personal-trainer"
+- link "Shop":
+  - /url: "#/shop"
+- link "Our Team":
+  - /url: "#/our-team"
+- link "Contact us":
+  - /url: "#/contact-us"
+- link "":
+  - /url: "#/checkout"
+- link "":
+  - /url: "#/notifications"
+- link " Sign In/Up":
+  - /url: "#/sign-in"
+  - generic: 
+  - generic: Sign In/Up
+- generic: TRUST THE PROCESS
+- paragraph: Sports teach your child discipline, agility, endurance, teamwork, leadership, and much more… Transform your child into the ultimate athlete. ASA grants your child with a healthy supporting community that allows your child to prosper and grow both Physical and Mental skills.
+- generic: TRUST THE PROCESS
+- paragraph: Sports teach your child discipline, agility, endurance, teamwork, leadership, and much more… Transform your child into the ultimate athlete. ASA grants your child with a healthy supporting community that allows your child to prosper and grow both Physical and Mental skills.
+- paragraph
+- paragraph
+- generic: TRUST THE PROCESS
+- paragraph: Sports teach your child discipline, agility, endurance, teamwork, leadership, and much more… Transform your child into the ultimate athlete. ASA grants your child with a healthy supporting community that allows your child to prosper and grow both Physical and Mental skills.
+- paragraph
+- generic: TRUST THE PROCESS
+- paragraph: Sports teach your child discipline, agility, endurance, teamwork, leadership, and much more… Transform your child into the ultimate athlete. ASA grants your child with a healthy supporting community that allows your child to prosper and grow both Physical and Mental skills.
+- paragraph
+- paragraph
+- generic: DEVELOPMENT
+- paragraph: We Provide a creative challenging and professional environment in which young players can develop.
+- generic: PROFESSIONALISM
+- paragraph: We use proven coaching methods as well as the latest training techniques.
+- generic: DISCIPLINE
+- paragraph: We focus on commitment, self control and teamwork spirit
+- generic: TEAMWORK
+- paragraph: We teach good sportsmanship, respect and the importance of trusting teammates
+- generic: PERFORMANCE
+- paragraph: We are more concerned with character performance and playing a good game than just winning.
+- generic: Our Academy
+- generic: Football
+- generic: ENHANCE YOUR PITCH SKILLS IN FOOTBALL
+- link "Learn More":
+  - /url: "#/academy/6"
+- generic: Padel
+- generic: THE FUSION OF TENNIS & SQUASH IS PADEL
+- link "Learn More":
+  - /url: "#/academy/5"
+- generic: Tennis
+- generic: TAKE YOUR TENNIS GAME TO NEW HEIGHTS
+- link "Learn More":
+  - /url: "#/academy/4"
+- generic: Our Members
+- generic: AGES 3-70
+- paragraph: Our sports academy welcomes everyone from ages 3 to 70 , offering a wide range of services tailored to meet the needs of each individual, ensuring a positive and beneficial experience for all.
+- paragraph
+- generic: 800 MEMBERS
+- paragraph: We have on average up to 800 members every season, coming from a vast range of schools and different countries. This allowed us to develop diversity within the academy.
+- generic: 9 SCHOOLS
+- paragraph: Our members come from a vast range of schools, some of which are the most reputable and known in Lebanon.
+- generic: WHY ASA?
+- paragraph: Advanced Sports Academy, established in Lebanon in 2007, has rapidly evolved into the first destination for specialized sports training in the country. Our main goal is to develop well-rounded athletes by combining education and training to support both their physical and mental aspects.
+- paragraph:
+  - strong: VISION
+  - text: We are motivated by the vision of shaping the champions of tomorrow. Our objective is to nurture professional athletes, ignite a profound passion for sports, and debunk the misconception that sports are only an “after-school activity”. We are committed to show that sports are a way of life, a means to empower a vibrant, energetic, and healthy future generation.
+- paragraph:
+  - strong: MISSION
+  - text: Our mission is to establish a professional, safe, and encompassing sports community that empowers individuals to reach their maximum potential. We hold a belief in the transformative influence of sports which has the capacity to build a healthy, inclusive, and harmonious society. In line with this mission, we provide opportunities for both boys and girls to acquire skills and life lessons through team sports and physical activities. ASA also plays a huge role in nurturing future sports professionals and young talents through our comprehensive sports curriculum, teams, academies, and trainings.
+- generic: Our Partners
+- link:
+  - /url: https://www.instagram.com/asaegyptofficial?igsh=OGJtcXp0ZmZ2cWxh
+- link:
+  - /url: https://asaofficialuae.com/?action=riyadi
+- generic: Our Sponsors
+- link:
+  - /url: https://noxsport.com/en
+- link:
+  - /url: https://knockservices.com
+- link:
+  - /url: https://www.medatco.com/en-lb/products/gerimax%C2%AE
+- generic: OUR COMMITMENT
+- paragraph: Our commitment is to provide a comprehensive sports experience that accommodates individuals of all skill levels and age groups. Our objective is to fuel your passion for sports and support you in reaching your goals, whether that means striving for professional excellence or adopting an active lifestyle.
+- generic: OUR ACHIEVEMENTS
+- paragraph
+- paragraph:
+  - strong: AUGUST 2022
+  - text: Team 2014 | Sadaka wel Salem al duwaliye, Afro Asian Tournament
+  - strong: "2023"
+- list:
+  - listitem: Team 2014 | Mirabilanda Tournament, Italy
+  - listitem: Team 2015 | Mirabilanda Tournament, Italy
+  - listitem: Team 2012 | Lebanese League, Lebanon
+  - listitem: Team 2014 | Afro Asian Tournament, Qatar
+  - listitem: Team 2015 | Afro Asian Tournament, Qatar
+  - listitem: Team 2008-2009 | Afro Asian Tournament, Qatar
+- generic: TRUST
+- generic: THE PROCESS
+- generic: "- RAED AL SADDIK -"
+- generic: Follow us for the latest updates!
+- link "VISIT US ON YOUTUBE":
+  - /url: https://www.youtube.com/@ASA-LEBANON
+  - button "VISIT US ON YOUTUBE":
+    - generic: VISIT US ON YOUTUBE
+- generic: Sports teaches your child discipline, agility, endurance, team work, leadership, and much more…
+- link "Academy":
+  - /url: "#/academy/6"
+- link "Private Training":
+  - /url: "#/personal-trainer"
+- link "Reservation":
+  - /url: "#/reservation"
+- link "Our Team":
+  - /url: "#/our-team"
+- link "Shop":
+  - /url: "#/shop"
+- link "Contact Us":
+  - /url: "#/contact-us"
+- generic: STAY CONNECTED
+- link "":
+  - /url: https://www.instagram.com/advancedsportsacademy/
+- link "":
+  - /url: "#/fb"
+- link "":
+  - /url: "#/1"
+- generic: DOWNLOAD THE APP
+- link "Download on the App Store":
+  - /url: https://apps.apple.com/ae/app/advanced-sports-academy/id6636536554
+  - generic: Download on the
+  - generic: App Store
+- link "Get It On Google Play":
+  - /url: https://play.google.com/store/apps/details?id=com.knockservices.asamea&hl=en
+  - generic: Get It On
+  - generic: Google Play
+- generic: Copyright 2024 - All rights reserved to ASA

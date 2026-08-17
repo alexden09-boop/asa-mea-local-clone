@@ -1,0 +1,32 @@
+{
+  "policy": "All runtime-critical assets are local; the original production bundle is evidence only and is never executed.",
+  "fonts": [
+    {"role": "Mulish normal", "path": "assets/fonts/mulish-latin.woff2"},
+    {"role": "Mulish italic", "path": "assets/fonts/mulish-latin-italic.woff2"}
+  ],
+  "images": [
+    {"role": "site logo", "path": "assets/images/logo.png"},
+    {"role": "home hero football", "path": "assets/images/hero-football.jpg"},
+    {"role": "home hero padel", "path": "assets/images/hero-padel.jpg"},
+    {"role": "home hero fitness", "path": "assets/images/hero-fitness.jpg"},
+    {"role": "five value icons", "paths": ["assets/images/icon-development.png", "assets/images/icon-professionalism.png", "assets/images/icon-discipline.png", "assets/images/icon-teamwork.png", "assets/images/icon-performance.png"]},
+    {"role": "academy cards", "paths": ["assets/images/academy-football.png", "assets/images/academy-padel.png", "assets/images/academy-tennis.png"]},
+    {"role": "about", "path": "assets/images/about-asa.png"},
+    {"role": "partners", "paths": ["assets/images/partner-egypt.png", "assets/images/partner-uae.png"]},
+    {"role": "sponsors", "paths": ["assets/images/sponsor-nox.png", "assets/images/sponsor-knock.png", "assets/images/sponsor-gerimax.png"]},
+    {"role": "achievements", "path": "assets/images/achievements.png"},
+    {"role": "commitment", "path": "assets/images/commitment.jpg"},
+    {"role": "Raed quote composition", "paths": ["assets/images/quote-raed.png", "assets/images/quote-open.png", "assets/images/quote-close.png"]},
+    {"role": "youtube", "path": "assets/images/youtube.png"},
+    {"role": "academy details", "paths": ["assets/images/detail-football.png", "assets/images/detail-padel.png", "assets/images/detail-tennis.png"]},
+    {"role": "reservation logo", "path": "assets/images/reservation-logo.png"},
+    {"role": "sign-up background", "path": "assets/images/signup-background.png"},
+    {"role": "app badge icons", "paths": ["assets/images/app-store.png", "assets/images/google-play.png"]},
+    {"role": "Lebanon phone picker flag", "path": "assets/images/lebanon-flag.svg"}
+  ],
+  "sourceSideFailures": [
+    "Academy and fitness gallery media currently fail to render on the live reference.",
+    "The live fitness detail hero, shop merchandise images, and current team employee portraits contain broken image placeholders.",
+    "Those failures are reproduced with neutral placeholders rather than invented media."
+  ]
+}
