@@ -4,6 +4,7 @@
   const data = window.ASA_DATA || {};
   const root = document.getElementById("root");
   let revealObserver = null;
+  let scrollProgressFrame = 0;
 
   const localImages = {
     heroes: ["assets/images/hero-football-1600.webp", "assets/images/hero-fitness-1600.webp", "assets/images/hero-padel-1600.webp"],
@@ -142,6 +143,7 @@
             <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">${icon("menu")}</button>
           </div>
         </div>
+        <progress class="Header__progress" max="1" value="0" aria-hidden="true" tabindex="-1"></progress>
       </header>
       <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
         <a class="mobile-link${active("/")}" href="#/">Home</a>
@@ -187,7 +189,7 @@
   }
 
   function page(content, path, includeFooter = true) {
-    return `${header(path)}<main class="site-main">${content}</main>${includeFooter ? footer() : ""}`;
+    return `${header(path)}<main class="site-main${path === "/" ? "" : " route-enter"}">${content}</main>${includeFooter ? footer() : ""}`;
   }
 
   function home() {
@@ -427,6 +429,7 @@
   }
 
   function bindEvents(path) {
+    bindScrollProgress();
     const menuButton = document.querySelector(".menu-toggle");
     const menu = document.getElementById("mobile-menu");
     if (menuButton && menu) {
@@ -522,41 +525,65 @@
     bindReveals();
   }
 
+  function bindScrollProgress() {
+    const progress = document.querySelector(".Header__progress");
+    if (!progress) return;
+
+    const update = () => {
+      const distance = Math.max(1, root.scrollHeight - root.clientHeight);
+      progress.value = Math.min(1, Math.max(0, root.scrollTop / distance));
+      scrollProgressFrame = 0;
+    };
+
+    root.onscroll = () => {
+      if (scrollProgressFrame) return;
+      scrollProgressFrame = window.requestAnimationFrame(update);
+    };
+    update();
+  }
+
   function bindReveals() {
     if (revealObserver) revealObserver.disconnect();
     revealObserver = null;
 
     const groups = [
-      ".SectionOurAcdemy .section-title",
+      ".section-title",
+      ".value-card",
       ".academy-card",
-      ".AboutASA .section-title",
+      ".member-card",
       ".AboutASA__image, .AboutASA__copy",
-      ".OurPartner .section-title, .OurSponsors .section-title",
       ".OurPartner .logo-card",
       ".OurSponsors .logo-card",
       ".OurCommitment__copy, .OurCommitment img",
-      ".OurAchievements .section-title",
       ".achievements-layout > *",
       ".Raed__quote, .Raed__image",
-      ".Youtube .section-title, .Youtube__image, .Youtube .btn",
+      ".Youtube__image, .Youtube .btn",
+      ".page-hero__media, .page-hero__copy > *",
+      ".quote-band blockquote",
       ".detail-section__copy, .detail-section__image",
-      ".gallery-section .section-title",
       ".gallery-row > *",
       ".shop-offer",
       ".category-offer",
       ".team-card",
-      ".product-card"
+      ".product-card",
+      ".FormPage__card, .ContactPage__card, .AuthPage__card",
+      ".Footer__grid > *"
     ];
 
-    const elements = [];
+    const elements = new Set();
     groups.forEach((selector) => {
       document.querySelectorAll(selector).forEach((element, index) => {
         element.classList.add("reveal", `reveal-delay-${Math.min(index, 4)}`);
-        elements.push(element);
+        if (element.matches(".section-title")) element.classList.add("reveal--title");
+        if (element.matches(".academy-card, .member-card, .logo-card, .shop-offer, .category-offer, .team-card, .product-card")) element.classList.add("reveal--card");
+        if (element.matches("img, .page-hero__media, .gallery-row > *")) element.classList.add("reveal--media");
+        if (element.matches(".AboutASA__image, .OurCommitment__copy, .achievements-layout > img, .Raed__quote, .detail-section__copy, .page-hero__media")) element.classList.add("reveal--left");
+        if (element.matches(".AboutASA__copy, .OurCommitment img, .achievements-copy, .Raed__image, .detail-section__image, .page-hero__copy > *")) element.classList.add("reveal--right");
+        elements.add(element);
       });
     });
 
-    if (!elements.length) return;
+    if (!elements.size) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
       elements.forEach((element) => element.classList.add("is-visible"));
       return;
@@ -577,12 +604,18 @@
   }
 
   function bindHero() {
+    const banner = document.querySelector(".HomeBanner");
     const slides = Array.from(document.querySelectorAll(".HomeBanner__slide"));
     const pages = Array.from(document.querySelectorAll("[data-hero-page]"));
-    if (!slides.length) return;
+    if (!banner || !slides.length) return;
     let current = 0;
     const show = (index) => {
-      current = (index + slides.length) % slides.length;
+      const next = (index + slides.length) % slides.length;
+      if (next === current) return;
+      const forwardDistance = (next - current + slides.length) % slides.length;
+      banner.classList.toggle("is-moving-forward", forwardDistance <= slides.length / 2);
+      banner.classList.toggle("is-moving-backward", forwardDistance > slides.length / 2);
+      current = next;
       slides.forEach((slide, slideIndex) => {
         const selected = slideIndex === current;
         const image = slide.querySelector("img[data-src]");
@@ -603,11 +636,31 @@
     document.querySelector(".HomeBanner__arrow--prev").addEventListener("click", () => show(current - 1));
     document.querySelector(".HomeBanner__arrow--next").addEventListener("click", () => show(current + 1));
     pages.forEach((page) => page.addEventListener("click", () => show(Number(page.dataset.heroPage))));
+
+    if (window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)").matches) {
+      let pointerFrame = 0;
+      let pointerZone = "";
+      banner.addEventListener("pointermove", (event) => {
+        const bounds = banner.getBoundingClientRect();
+        const ratio = (event.clientX - bounds.left) / bounds.width;
+        pointerZone = ratio < 0.42 ? "motion-left" : ratio > 0.58 ? "motion-right" : "";
+        if (pointerFrame) return;
+        pointerFrame = window.requestAnimationFrame(() => {
+          banner.classList.remove("motion-left", "motion-right");
+          if (pointerZone) banner.classList.add(pointerZone);
+          pointerFrame = 0;
+        });
+      }, { passive: true });
+      banner.addEventListener("pointerleave", () => banner.classList.remove("motion-left", "motion-right"));
+    }
   }
 
   function render() {
     if (revealObserver) revealObserver.disconnect();
     revealObserver = null;
+    if (scrollProgressFrame) window.cancelAnimationFrame(scrollProgressFrame);
+    scrollProgressFrame = 0;
+    root.onscroll = null;
     const path = routePath();
     let markup;
     if (path === "/") markup = home();
